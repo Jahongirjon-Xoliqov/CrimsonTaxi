@@ -8,22 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0A06F5C62ADD41BA006BCB4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06F5C52ADD41BA006BCB4F /* AppDelegate.swift */; };
-		0A06F5C82ADD41BA006BCB4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06F5C72ADD41BA006BCB4F /* SceneDelegate.swift */; };
-		0A06F5CA2ADD41BA006BCB4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06F5C92ADD41BA006BCB4F /* ViewController.swift */; };
-		0A06F5CD2ADD41BA006BCB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A06F5CB2ADD41BA006BCB4F /* Main.storyboard */; };
 		0A06F5CF2ADD41BB006BCB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A06F5CE2ADD41BB006BCB4F /* Assets.xcassets */; };
 		0A06F5D22ADD41BB006BCB4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A06F5D02ADD41BB006BCB4F /* LaunchScreen.storyboard */; };
+		0A54DA3A2ADFAB6800F15E17 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54DA392ADFAB6800F15E17 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A06F5C22ADD41BA006BCB4F /* CrimsonTaxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrimsonTaxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A06F5C52ADD41BA006BCB4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A06F5C72ADD41BA006BCB4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0A06F5C92ADD41BA006BCB4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0A06F5CC2ADD41BA006BCB4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A06F5CE2ADD41BB006BCB4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A06F5D12ADD41BB006BCB4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A06F5D32ADD41BB006BCB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A54DA392ADFAB6800F15E17 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +52,21 @@
 		0A06F5C42ADD41BA006BCB4F /* CrimsonTaxi */ = {
 			isa = PBXGroup;
 			children = (
+				0A54DA382ADFAB4E00F15E17 /* Base */,
 				0A06F5C52ADD41BA006BCB4F /* AppDelegate.swift */,
-				0A06F5C72ADD41BA006BCB4F /* SceneDelegate.swift */,
-				0A06F5C92ADD41BA006BCB4F /* ViewController.swift */,
-				0A06F5CB2ADD41BA006BCB4F /* Main.storyboard */,
 				0A06F5CE2ADD41BB006BCB4F /* Assets.xcassets */,
 				0A06F5D02ADD41BB006BCB4F /* LaunchScreen.storyboard */,
 				0A06F5D32ADD41BB006BCB4F /* Info.plist */,
 			);
 			path = CrimsonTaxi;
+			sourceTree = "<group>";
+		};
+		0A54DA382ADFAB4E00F15E17 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0A54DA392ADFAB6800F15E17 /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +129,6 @@
 			files = (
 				0A06F5D22ADD41BB006BCB4F /* LaunchScreen.storyboard in Resources */,
 				0A06F5CF2ADD41BB006BCB4F /* Assets.xcassets in Resources */,
-				0A06F5CD2ADD41BA006BCB4F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +139,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A06F5CA2ADD41BA006BCB4F /* ViewController.swift in Sources */,
 				0A06F5C62ADD41BA006BCB4F /* AppDelegate.swift in Sources */,
-				0A06F5C82ADD41BA006BCB4F /* SceneDelegate.swift in Sources */,
+				0A54DA3A2ADFAB6800F15E17 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0A06F5CB2ADD41BA006BCB4F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A06F5CC2ADD41BA006BCB4F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0A06F5D02ADD41BB006BCB4F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +289,8 @@
 				INFOPLIST_FILE = CrimsonTaxi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,9 +299,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.something.CrimsonTaxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,9 +320,8 @@
 				INFOPLIST_FILE = CrimsonTaxi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -337,9 +330,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.something.CrimsonTaxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
