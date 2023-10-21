@@ -8,6 +8,9 @@
 import UIKit
 
 class BaseViewController: UIViewController {
+    lazy var navController: BaseNavigationController? = {
+        navigationController as? BaseNavigationController
+    }()
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -21,7 +24,20 @@ class BaseViewController: UIViewController {
     deinit {
         Theme.settings.remove(self)
     }
+    func backTap() {}
     func configureAppearance() {}
+}
+
+extension BaseViewController {
+    func set(title: String) {
+        navController?.set(title: title)
+    }
+    func setBackButton() {
+        navController?.setBackButton { [weak self] in
+            guard let self else { return }
+            self.backTap()
+        }
+    }
 }
 
 extension BaseViewController: ThemeModifiable {

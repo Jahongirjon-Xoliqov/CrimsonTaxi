@@ -54,6 +54,12 @@ class Weak<T: Weakable> {
 
 protocol ThemeModifiable: Weakable {
     func updateTheme()
+    func configureColor()
+}
+
+extension ThemeModifiable {
+    func updateTheme() {}
+    func configureColor() {}
 }
 
 final class Theme {
