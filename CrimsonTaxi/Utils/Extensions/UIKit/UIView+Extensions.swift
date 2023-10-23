@@ -21,16 +21,36 @@ extension UIView {
         border()
     }
     
-    func border(_ width: CGFloat = 0.2,
+    func border(_ width: CGFloat = 0.4,
                 color: UIColor = Theme.current.supporting) {
         layer.borderColor = color.cgColor
         layer.borderWidth = width
+    }
+    
+    func clearBorder() {
+        layer.borderColor = UIColor.clear.cgColor
+        layer.borderWidth = 0
+    }
+    
+    func primaryButtonShadow() {
+        clipsToBounds = false
+        layer.masksToBounds = false
+        layer.applyShadow(color: Theme.current.primary,
+                          offset: CGSize(width: 0, height: 10),
+                          radius: 10,
+                          opacity: 0.3)
     }
     
     func applyShadow() {
         clipsToBounds = false
         layer.masksToBounds = false
         layer.applyShadow()
+    }
+    
+    func clearShadow() {
+        UIView.animate(withDuration: DEFAULT_ANIMATION_DURATION) {
+            self.layer.applyShadow(color: .clear, offset: .zero, radius: 0, opacity: 0)
+        }
     }
     
     func clip(radius: CGFloat) {

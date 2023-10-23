@@ -9,4 +9,11 @@ extension Optional {
             try block(value)
         }
     }
+    
+}
+
+extension Optional where Wrapped == String {
+    var nonNil: String {
+        self ?? String.empty
+    }
 }

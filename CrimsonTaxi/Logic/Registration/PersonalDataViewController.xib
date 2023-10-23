@@ -11,9 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalDataViewController" customModule="CrimsonTaxi" customModuleProvider="target">
             <connections>
-                <outlet property="inputFieldView" destination="Sem-fy-Hhv" id="8qG-mi-XNl"/>
+                <outlet property="femaleButton" destination="Bcn-nH-Ce9" id="zwG-h5-jyW"/>
                 <outlet property="largeTitleLabel" destination="SN9-4r-2c5" id="my0-2S-re9"/>
-                <outlet property="navTitleView" destination="qJn-AF-SF5" id="JfA-s2-cy7"/>
+                <outlet property="maleButton" destination="TUx-xp-Ngo" id="prE-4N-vpW"/>
+                <outlet property="nameFieldView" destination="Sem-fy-Hhv" id="rrN-Eu-5oG"/>
+                <outlet property="nextButton" destination="g7A-3g-xhR" id="eIX-sP-w9Q"/>
+                <outlet property="phoneFieldView" destination="ljF-Oz-mhD" id="Gmu-nq-qt3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,13 +32,6 @@
                         <constraint firstAttribute="height" constant="60" id="Na8-7C-83z"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJn-AF-SF5" customClass="NavTitleView" customModule="CrimsonTaxi" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="79" width="393" height="54"/>
-                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="54" id="cL9-sM-OHs"/>
-                    </constraints>
-                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SN9-4r-2c5">
                     <rect key="frame" x="30" y="163" width="333" height="20.333333333333343"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -49,31 +45,47 @@
                         <constraint firstAttribute="height" constant="60" id="ehs-SP-gzl"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYh-HM-rEI" customClass="InputFieldView" customModule="CrimsonTaxi" customModuleProvider="target">
-                    <rect key="frame" x="30" y="373.33333333333331" width="333" height="60"/>
-                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7A-3g-xhR" customClass="PrimaryButton" customModule="CrimsonTaxi" customModuleProvider="target">
+                    <rect key="frame" x="30" y="748" width="333" height="60"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="gbI-Cr-Qwg"/>
+                        <constraint firstAttribute="height" constant="60" id="9us-CI-h1k"/>
                     </constraints>
                 </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PLN-6v-3vw">
+                    <rect key="frame" x="30" y="373.33333333333331" width="333" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUx-xp-Ngo" customClass="SelectableView" customModule="CrimsonTaxi" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="60"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bcn-nH-Ce9" customClass="SelectableView" customModule="CrimsonTaxi" customModuleProvider="target">
+                            <rect key="frame" x="176.66666666666663" y="0.0" width="156.33333333333337" height="60"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="ldN-Dm-ptU"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="gYh-HM-rEI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="63R-Wb-f0t"/>
-                <constraint firstItem="SN9-4r-2c5" firstAttribute="top" secondItem="qJn-AF-SF5" secondAttribute="bottom" constant="30" id="7Zt-Gc-uSh"/>
-                <constraint firstItem="qJn-AF-SF5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="BdR-tU-rUv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SN9-4r-2c5" secondAttribute="trailing" constant="30" id="DB8-3L-wEI"/>
                 <constraint firstItem="ljF-Oz-mhD" firstAttribute="top" secondItem="Sem-fy-Hhv" secondAttribute="bottom" constant="20" id="DSE-oX-v7b"/>
                 <constraint firstItem="Sem-fy-Hhv" firstAttribute="top" secondItem="SN9-4r-2c5" secondAttribute="bottom" constant="30" id="EMc-MO-cf7"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qJn-AF-SF5" secondAttribute="trailing" id="Kar-We-bci"/>
+                <constraint firstItem="g7A-3g-xhR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="IeE-k9-jEX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ljF-Oz-mhD" secondAttribute="trailing" constant="30" id="PgY-TA-uB2"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gYh-HM-rEI" secondAttribute="trailing" constant="30" id="fEa-To-cde"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g7A-3g-xhR" secondAttribute="trailing" constant="30" id="VC7-Mp-Reg"/>
+                <constraint firstItem="SN9-4r-2c5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="104" id="XNx-8M-ZrZ"/>
+                <constraint firstItem="PLN-6v-3vw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="dtd-Jm-cs3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Sem-fy-Hhv" secondAttribute="trailing" constant="30" id="jz2-g6-xMb"/>
-                <constraint firstItem="qJn-AF-SF5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kjf-qF-boa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PLN-6v-3vw" secondAttribute="trailing" constant="30" id="krD-43-Q9a"/>
                 <constraint firstItem="SN9-4r-2c5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="lsQ-i5-BnY"/>
                 <constraint firstItem="ljF-Oz-mhD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="nYN-Xd-si6"/>
-                <constraint firstItem="gYh-HM-rEI" firstAttribute="top" secondItem="ljF-Oz-mhD" secondAttribute="bottom" constant="20" id="q2C-A9-xSi"/>
+                <constraint firstItem="g7A-3g-xhR" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-10" id="rOo-J5-KzB"/>
+                <constraint firstItem="PLN-6v-3vw" firstAttribute="top" secondItem="ljF-Oz-mhD" secondAttribute="bottom" constant="20" id="rkU-56-Pgb"/>
                 <constraint firstItem="Sem-fy-Hhv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="yLk-4V-JSz"/>
             </constraints>
             <point key="canvasLocation" x="41.984732824427482" y="20.422535211267608"/>

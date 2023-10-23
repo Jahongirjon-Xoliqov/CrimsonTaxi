@@ -38,6 +38,13 @@ class BaseViewController: UIViewController {
     }
 }
 
+extension BaseViewController {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+}
+
 extension BaseViewController: ThemeModifiable {
     func updateTheme() {
         configureAppearance()

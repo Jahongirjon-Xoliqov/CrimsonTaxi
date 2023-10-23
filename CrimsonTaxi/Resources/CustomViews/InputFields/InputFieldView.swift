@@ -13,6 +13,9 @@ class InputFieldView: BaseUIView {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     
+    private var image: UIImage?
+    private var placeholderText: String?
+    
     override func commonInit() {
         super.commonInit()
         addParent(customView: selfView)
@@ -22,8 +25,6 @@ class InputFieldView: BaseUIView {
     private func configure() {
         clearBackground()
         selfView.inactiveBorder()
-        textField.placeholder(with: "Your Name")
-        imageView.image = UIImage(named: "profile")
     }
     
     override func draw(_ rect: CGRect) {
@@ -31,13 +32,23 @@ class InputFieldView: BaseUIView {
         selfView.clip(radius: rect.height/4)
     }
     
+    func set(image: UIImage?) {
+        self.image = image
+        imageView.image = image
+    }
+    
+    func set(placeholder: String?) {
+        self.placeholderText = placeholder
+        textField.placeholder(with: placeholder.nonNil)
+    }
+    
 }
 
 extension InputFieldView: ThemeModifiable {
     func configureColor() {
-        imageView.tintColor = Theme.current.supporting
-        textField.placeholder(with: "You Name")
         selfView.inactiveBorder()
+        imageView.tintColor = Theme.current.supporting
+        textField.placeholder(with: placeholderText.nonNil)
         selfView.backgroundColor = Theme.current.background
     }
 }

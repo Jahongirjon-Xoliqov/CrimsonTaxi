@@ -28,7 +28,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="83"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kGH-hp-lNw">
-                                    <rect key="frame" x="33.333333333333329" y="24.666666666666661" width="37.333333333333329" height="34.333333333333329"/>
+                                    <rect key="frame" x="35.333333333333336" y="27" width="33.000000000000007" height="29.666666666666671"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="kGH-hp-lNw" secondAttribute="height" id="AIq-BY-144"/>
                                     </constraints>
@@ -38,7 +38,7 @@
                             <constraints>
                                 <constraint firstItem="kGH-hp-lNw" firstAttribute="centerX" secondItem="PGU-e1-WEC" secondAttribute="centerX" id="D93-Ec-bQ4"/>
                                 <constraint firstAttribute="width" secondItem="PGU-e1-WEC" secondAttribute="height" multiplier="1.25" id="Ddj-aX-XBA"/>
-                                <constraint firstItem="kGH-hp-lNw" firstAttribute="height" secondItem="PGU-e1-WEC" secondAttribute="height" multiplier="0.45" id="NdC-Qc-9tO"/>
+                                <constraint firstItem="kGH-hp-lNw" firstAttribute="height" secondItem="PGU-e1-WEC" secondAttribute="height" multiplier="0.4" id="NdC-Qc-9tO"/>
                                 <constraint firstItem="kGH-hp-lNw" firstAttribute="centerY" secondItem="PGU-e1-WEC" secondAttribute="centerY" id="iP2-3U-iqm"/>
                             </constraints>
                         </view>

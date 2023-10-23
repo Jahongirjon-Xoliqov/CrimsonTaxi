@@ -1,39 +1,60 @@
 //
-//  NavBackButton.swift
+//  PrimaryButton.swift
 //  CrimsonTaxi
 //
-//  Created by Dzakhon on 20/10/23.
+//  Created by Dzakhon on 23/10/23.
 //
 
 import UIKit
 
-class NavBackButton: BaseUIView {
+
+class PrimaryButton: BaseUIView {
     
     @IBOutlet weak var selfView: UIView!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var stackView: UIStackView!
     
     var tapAction: CommonAction?
-     
+    
     override func commonInit() {
         super.commonInit()
         addParent(customView: selfView)
+        clearBackground()
         configure()
     }
     
     private func configure() {
-        applyShadow()
-        clearBackground()
-        imageView.image = UIImage(named: "navBack")
+        primaryButtonShadow()
+        stackView.spacing = 0
+        imageView.isHidden = true
+        selfView.backgroundColor = Theme.current.primary
     }
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        selfView.clip(radius: rect.height/2)
+        selfView.clip(radius: rect.height/4)
     }
+    
+    func set(image: UIImage?) {
+        imageView.image = image
+        imageView.tintColor = .white
+    }
+    
+    func set(title: String?) {
+        titleLabel.attributedText = Attr.create(text: title.nonNil,
+                                                color: .white,
+                                                font: .semibold,
+                                                size: 17)
+    }
+    
+}
+
+extension PrimaryButton {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        fadeIn(duration: 0.1)
+        fadeIn()
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -47,11 +68,4 @@ class NavBackButton: BaseUIView {
         fadeOut()
     }
     
-}
-
-extension NavBackButton: ThemeModifiable {
-    func configureColor() {
-        selfView.backgroundColor = Theme.current.navigationControl
-        imageView.tintColor = .white
-    }
 }

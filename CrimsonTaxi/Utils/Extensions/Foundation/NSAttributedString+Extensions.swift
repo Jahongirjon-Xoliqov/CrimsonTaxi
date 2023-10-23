@@ -7,6 +7,8 @@
 
 import UIKit
 
+typealias Attr = NSAttributedString
+
 extension NSAttributedString {
     convenience init(text: String,
                      color: UIColor,
@@ -504,4 +506,94 @@ public func +(lhs: NSMutableAttributedString, rhs: NSAttributedString) -> NSMuta
 
 public func +=(lhs: NSMutableAttributedString, rhs: NSAttributedString) {
     lhs.append(rhs)
+}
+
+
+extension NSMutableAttributedString {
+    
+    func replace(text: String,
+                 color: UIColor,
+                 font: Font,
+                 size: CGFloat,
+                 align: NSTextAlignment = .center,
+                 lineSpacing: CGFloat = 0,
+                 underline: Bool = false,
+                 striked: Bool = false) -> NSMutableAttributedString {
+        
+        let newAttributedString = NSMutableAttributedString(string: text,
+                                                            attributes: [NSAttributedString.Key.foregroundColor: color,
+                                                                         NSAttributedString.Key.font: font .size(size)])
+        if let range = self.string.range(of: text) {
+            let nsRange = NSRange(range, in: self.string)
+            
+            self.replaceCharacters(in: nsRange, with: newAttributedString)
+            
+            if underline {
+                self.addAttribute(NSAttributedString.Key.underlineStyle,
+                                     value: NSUnderlineStyle.single.rawValue, range: NSRange(range, in: self.string))
+            }
+            
+            if striked {
+                self.addAttribute(NSAttributedString.Key.strikethroughStyle,
+                                     value: NSUnderlineStyle.single.rawValue, range: NSRange(range, in: self.string))
+            }
+
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.alignment = align
+            paragraphStyle.lineSpacing = lineSpacing
+            
+            self.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle,
+                                 range: NSRange(range, in: self.string))
+            
+        }
+        
+        return self
+        
+    }
+    
+}
+
+extension NSAttributedString {
+    
+    static func create(text: String,
+                       color: UIColor,
+                       font: Font,
+                       size: CGFloat,
+                       align: NSTextAlignment = .center,
+                       letterSpacing: CGFloat = 0,
+                       lineSpacing: CGFloat = 0 ,
+                       lineBreakMode: NSLineBreakMode = .byWordWrapping,
+                       underline: Bool = false,
+                       striked: Bool = false) -> NSMutableAttributedString {
+        
+        if text.isEmpty {
+            return NSMutableAttributedString(string: text)
+        }
+        
+        let attributedText = NSMutableAttributedString(string: text,
+                                                       attributes: [NSAttributedString.Key.font: font.size(size),
+                                                                    NSAttributedString.Key.foregroundColor: color,
+                                                                    .kern: letterSpacing])
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = align
+        paragraphStyle.lineSpacing = lineSpacing
+        paragraphStyle.lineBreakMode = lineBreakMode
+        
+        let lineRange = NSRange(location: 0, length: attributedText.length)
+        attributedText.addAttribute(NSAttributedString.Key.paragraphStyle,
+                                    value: paragraphStyle,
+                                    range: lineRange)
+        
+        if underline {
+            attributedText.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: lineRange)
+        }
+        
+        if striked {
+            attributedText.addAttribute(NSAttributedString.Key.strikethroughStyle, value: NSUnderlineStyle.single.rawValue, range: lineRange)
+        }
+        
+        return attributedText
+        
+    }
 }
