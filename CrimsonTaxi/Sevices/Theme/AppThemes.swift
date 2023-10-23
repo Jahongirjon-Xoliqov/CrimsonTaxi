@@ -15,6 +15,7 @@ protocol Themeable: AnyObject {
     var supporting: UIColor { get }
     var error: UIColor { get }
     var navigationControl: UIColor { get }
+    var supportingBacground: UIColor { get }
 }
 
 final class LightTheme: Themeable {
@@ -25,6 +26,7 @@ final class LightTheme: Themeable {
     var supporting: UIColor = UIColor(red: 146, green: 146, blue: 146)
     var error: UIColor = UIColor(red: 255, green: 0, blue: 0)
     var navigationControl: UIColor = UIColor(red: 16, green: 24, blue: 46)
+    var supportingBacground: UIColor = UIColor(red: 255, green: 255, blue: 255)
 }
 
 final class DarkTheme: Themeable {
@@ -35,6 +37,7 @@ final class DarkTheme: Themeable {
     var supporting: UIColor = UIColor(red: 255, green: 255, blue: 255)
     var error: UIColor = UIColor(red: 255, green: 0, blue: 0)
     var navigationControl: UIColor = UIColor(red: 250, green: 146, blue: 17)
+    var supportingBacground: UIColor = UIColor(red: 46, green: 46, blue: 46)
 }
 
 final class CrimsonTheme: Themeable {
@@ -45,4 +48,5 @@ final class CrimsonTheme: Themeable {
     var supporting: UIColor = UIColor(rgb: 0x515151)
     var error: UIColor = UIColor(rgb: 0xFF0000)
     var navigationControl: UIColor = UIColor(rgb: 0xFF0000)
+    var supportingBacground: UIColor = UIColor(rgb: 0xFF0000)
 }

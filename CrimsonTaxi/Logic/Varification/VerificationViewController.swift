@@ -12,6 +12,7 @@ class VerificationViewController: BaseViewController {
     @IBOutlet weak var navTitleView: NavTitleView!
     @IBOutlet weak var largeTitleLabel: UILabel!
     @IBOutlet weak var verifyButton: PrimaryButton!
+    @IBOutlet weak var otpView: OtpView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +21,9 @@ class VerificationViewController: BaseViewController {
         verifyButton.set(title: "Verify")
         verifyButton.tapAction = { [weak self] in
             guard let self else { return }
-            Theme.settings.updateTheme(Bool.random() ? DarkTheme() : LightTheme())
         }
+        otpView.decorator = OtpViewDecorator.defaultDecorator
+        otpView.delegate = self
     }
     
     func configureNavTitleView() {
@@ -34,6 +36,7 @@ class VerificationViewController: BaseViewController {
     
     override func configureAppearance() {
         super.configureAppearance()
+        view.backgroundColor = Theme.current.background
         largeTitleLabel.attributedText = Attr.create(text: "Verify You Pin\nCode",
                                                      color: Theme.current.text,
                                                      font: .extrabold,
@@ -44,7 +47,13 @@ class VerificationViewController: BaseViewController {
                                                  font: .extrabold,
                                                  size: 32,
                                                  align: .left)
-        view.backgroundColor = Theme.current.background
     }
     
+}
+
+extension VerificationViewController: OtpViewDelegate {
+    func shouldReceive(otpCode code: String, at otpView: OtpView) -> Bool {
+        print(code)
+        return true
+    }
 }

@@ -22,6 +22,10 @@
 		0A8042172AE6B3E300EFF450 /* SelectableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8042162AE6B3E300EFF450 /* SelectableView.xib */; };
 		0A80421B2AE6C1ED00EFF450 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8042192AE6C1ED00EFF450 /* VerificationViewController.swift */; };
 		0A80421C2AE6C1ED00EFF450 /* VerificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A80421A2AE6C1ED00EFF450 /* VerificationViewController.xib */; };
+		0A8042262AE6CB6200EFF450 /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8042222AE6CB6100EFF450 /* OtpView.swift */; };
+		0A8042272AE6CB6200EFF450 /* OtpTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8042232AE6CB6200EFF450 /* OtpTextField.swift */; };
+		0A8042282AE6CB6200EFF450 /* OtpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8042242AE6CB6200EFF450 /* OtpView.xib */; };
+		0A8042292AE6CB6200EFF450 /* OtpViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8042252AE6CB6200EFF450 /* OtpViewDecorator.swift */; };
 		0AA8B8D82AE6653E000FEBF8 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8B8D72AE6653E000FEBF8 /* Optional+Extensions.swift */; };
 		0AA8B8DD2AE66C61000FEBF8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AA8B8DF2AE66C61000FEBF8 /* Localizable.strings */; };
 		0AA8B8E62AE694AC000FEBF8 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8B8E52AE694AC000FEBF8 /* PrimaryButton.swift */; };
@@ -69,6 +73,10 @@
 		0A8042162AE6B3E300EFF450 /* SelectableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectableView.xib; sourceTree = "<group>"; };
 		0A8042192AE6C1ED00EFF450 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		0A80421A2AE6C1ED00EFF450 /* VerificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerificationViewController.xib; sourceTree = "<group>"; };
+		0A8042222AE6CB6100EFF450 /* OtpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
+		0A8042232AE6CB6200EFF450 /* OtpTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpTextField.swift; sourceTree = "<group>"; };
+		0A8042242AE6CB6200EFF450 /* OtpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtpView.xib; sourceTree = "<group>"; };
+		0A8042252AE6CB6200EFF450 /* OtpViewDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpViewDecorator.swift; sourceTree = "<group>"; };
 		0AA8B8D72AE6653E000FEBF8 /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 		0AA8B8DE2AE66C61000FEBF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0AA8B8E42AE675B1000FEBF8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -166,6 +174,17 @@
 				0A80421A2AE6C1ED00EFF450 /* VerificationViewController.xib */,
 			);
 			path = Varification;
+			sourceTree = "<group>";
+		};
+		0A80421D2AE6C9E600EFF450 /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				0A8042232AE6CB6200EFF450 /* OtpTextField.swift */,
+				0A8042222AE6CB6100EFF450 /* OtpView.swift */,
+				0A8042242AE6CB6200EFF450 /* OtpView.xib */,
+				0A8042252AE6CB6200EFF450 /* OtpViewDecorator.swift */,
+			);
+			path = OTP;
 			sourceTree = "<group>";
 		};
 		0AA8B8DA2AE66C20000FEBF8 /* Localizations */ = {
@@ -304,6 +323,7 @@
 		0ABF34B02AE2D19600CE6D0F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				0A80421D2AE6C9E600EFF450 /* OTP */,
 				0A8042132AE6B35B00EFF450 /* PrimaryButton */,
 				0AA8B8E72AE69515000FEBF8 /* SeletableView */,
 				0A720EC92AE57DAB00511167 /* NavTitleView */,
@@ -418,6 +438,7 @@
 				0ABF349D2AE2A20400CE6D0F /* Montserrat-Bold.ttf in Resources */,
 				0A06F5D22ADD41BB006BCB4F /* LaunchScreen.storyboard in Resources */,
 				0A79A4512AE2EB66006059A9 /* NavBackButton.xib in Resources */,
+				0A8042282AE6CB6200EFF450 /* OtpView.xib in Resources */,
 				0ABF34AD2AE2CF0C00CE6D0F /* PersonalDataViewController.xib in Resources */,
 				0ABF34A02AE2A20400CE6D0F /* Montserrat-SemiBold.ttf in Resources */,
 				0AEDE85B2AE3A96C001CCFEB /* InputFieldView.xib in Resources */,
@@ -444,6 +465,7 @@
 				0ABF348A2AE2828C00CE6D0F /* Cache.swift in Sources */,
 				0ABF34AC2AE2CF0C00CE6D0F /* PersonalDataViewController.swift in Sources */,
 				0A79A4572AE2FDFF006059A9 /* Contants.swift in Sources */,
+				0A8042262AE6CB6200EFF450 /* OtpView.swift in Sources */,
 				0A38713E2AE4479100855F45 /* AppThemes.swift in Sources */,
 				0ABF34932AE2993E00CE6D0F /* Font.swift in Sources */,
 				0A06F5C62ADD41BA006BCB4F /* AppDelegate.swift in Sources */,
@@ -451,6 +473,7 @@
 				0A79A4552AE2F7F2006059A9 /* UIView+Extensions.swift in Sources */,
 				0ABF34A72AE2A95400CE6D0F /* UIViewController+Extensions.swift in Sources */,
 				0AEDE8512AE3A28F001CCFEB /* InputFieldView.swift in Sources */,
+				0A8042292AE6CB6200EFF450 /* OtpViewDecorator.swift in Sources */,
 				0AEDE8532AE3A5A3001CCFEB /* UITextField+Extensions.swift in Sources */,
 				0AA8B8E62AE694AC000FEBF8 /* PrimaryButton.swift in Sources */,
 				0A54DA3A2ADFAB6800F15E17 /* BaseViewController.swift in Sources */,
@@ -463,6 +486,7 @@
 				0ABF34AF2AE2CFEB00CE6D0F /* BaseNavigationController.swift in Sources */,
 				0ABF34872AE2771500CE6D0F /* UIColor+Extensions.swift in Sources */,
 				0A79A4532AE2EBF2006059A9 /* BaseUIView.swift in Sources */,
+				0A8042272AE6CB6200EFF450 /* OtpTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

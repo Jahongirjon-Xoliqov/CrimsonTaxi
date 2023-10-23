@@ -39,6 +39,7 @@ class PersonalDataViewController: BaseViewController {
             guard let self else { return }
             self.maleButton.set(state: .seleted)
             self.femaleButton.set(state: .default)
+            Theme.settings.updateTheme(DarkTheme())
         }
         
         femaleButton.set(title: "Female")
@@ -47,12 +48,14 @@ class PersonalDataViewController: BaseViewController {
             guard let self else { return }
             self.femaleButton.set(state: .seleted)
             self.maleButton.set(state: .default)
+            Theme.settings.updateTheme(LightTheme())
         }
         
     }
     
     override func configureAppearance() {
         super.configureAppearance()
+        view.backgroundColor = Theme.current.background
         largeTitleLabel.attributedText = Attr.create(text: "Enter Your\nPersonal Details",
                                                      color: Theme.current.text,
                                                      font: .extrabold,
@@ -63,7 +66,6 @@ class PersonalDataViewController: BaseViewController {
                                                  font: .extrabold,
                                                  size: 32,
                                                  align: .left)
-        view.backgroundColor = Theme.current.background
     }
     
 }

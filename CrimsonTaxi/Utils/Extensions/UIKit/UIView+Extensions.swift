@@ -47,6 +47,18 @@ extension UIView {
         layer.applyShadow()
     }
     
+    func applyShadow(color: UIColor = .darkGray,
+                     offset: CGSize = CGSize(width: 0, height: 5),
+                     radius: CGFloat = 16,
+                     opacity: Float = 0.15) {
+        clipsToBounds = false
+        layer.masksToBounds = false
+        layer.applyShadow(color: color,
+                          offset: offset,
+                          radius: radius,
+                          opacity: opacity)
+    }
+    
     func clearShadow() {
         UIView.animate(withDuration: DEFAULT_ANIMATION_DURATION) {
             self.layer.applyShadow(color: .clear, offset: .zero, radius: 0, opacity: 0)

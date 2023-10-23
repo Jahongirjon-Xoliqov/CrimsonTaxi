@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="largeTitleLabel" destination="PsP-Gl-UGQ" id="H5P-dl-qed"/>
                 <outlet property="navTitleView" destination="FUA-Pu-qz6" id="0fz-F1-j2Q"/>
+                <outlet property="otpView" destination="cVg-q6-1eB" id="ckz-o7-FNT"/>
                 <outlet property="verifyButton" destination="7tj-aF-qSk" id="zPk-Py-Hpm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -35,9 +36,9 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVg-q6-1eB">
-                    <rect key="frame" x="30" y="213.33333333333334" width="333" height="60.000000000000028"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVg-q6-1eB" customClass="OtpView" customModule="CrimsonTaxi" customModuleProvider="target">
+                    <rect key="frame" x="40" y="213.33333333333334" width="313" height="60.000000000000028"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="M8L-dJ-ASE"/>
                     </constraints>
@@ -57,9 +58,9 @@
                 <constraint firstItem="cVg-q6-1eB" firstAttribute="top" secondItem="PsP-Gl-UGQ" secondAttribute="bottom" constant="30" id="4lp-z7-u8R"/>
                 <constraint firstItem="FUA-Pu-qz6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5Au-bN-PFt"/>
                 <constraint firstItem="PsP-Gl-UGQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Mca-zV-f5I"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cVg-q6-1eB" secondAttribute="trailing" constant="30" id="Qkj-aw-XyR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cVg-q6-1eB" secondAttribute="trailing" constant="40" id="Qkj-aw-XyR"/>
                 <constraint firstItem="PsP-Gl-UGQ" firstAttribute="top" secondItem="FUA-Pu-qz6" secondAttribute="bottom" constant="30" id="SIB-s9-tSo"/>
-                <constraint firstItem="cVg-q6-1eB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="eQc-5D-vuH"/>
+                <constraint firstItem="cVg-q6-1eB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="eQc-5D-vuH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7tj-aF-qSk" secondAttribute="trailing" constant="30" id="g3s-VE-OFw"/>
                 <constraint firstItem="FUA-Pu-qz6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="gRW-Wx-6kt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7tj-aF-qSk" secondAttribute="bottom" constant="10" id="jwn-DI-fxB"/>
@@ -71,7 +72,7 @@
     </objects>
     <resources>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
