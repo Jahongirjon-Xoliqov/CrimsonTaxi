@@ -7,39 +7,6 @@
 
 import UIKit
 
-protocol Themeable: AnyObject {
-    var primary: UIColor { get }
-    var secondary: UIColor { get }
-    var text: UIColor { get }
-    var background: UIColor { get }
-    var supporting: UIColor { get }
-}
-
-final class LightTheme: Themeable {
-    var primary: UIColor = UIColor(rgb: 0xfca311)
-    var secondary: UIColor = UIColor(rgb: 0x14217d)
-    var text: UIColor = UIColor(rgb: 0x00)
-    var background: UIColor = UIColor(rgb: 0xff)
-    var supporting: UIColor = UIColor(rgb: 0x515151)
-}
-
-final class DarkTheme: Themeable {
-    var primary: UIColor = UIColor(rgb: 0x123132)
-    var secondary: UIColor = UIColor(rgb: 0x14217d)
-    var text: UIColor = UIColor(rgb: 0xff)
-    var background: UIColor = UIColor(rgb: 0xff)
-    var supporting: UIColor = UIColor(rgb: 0x515151)
-}
-
-final class CrimsonTheme: Themeable {
-    var primary: UIColor = UIColor(rgb: 0xfca311)
-    var secondary: UIColor = UIColor(rgb: 0x14217d)
-    var text: UIColor = UIColor(rgb: 0x00)
-    var background: UIColor = UIColor(rgb: 0xff)
-    var supporting: UIColor = UIColor(rgb: 0x515151)
-}
-
-
 protocol Weakable: AnyObject { }
 
 class Weak<T: Weakable> {

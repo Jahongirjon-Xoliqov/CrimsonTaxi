@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputFieldView" customModule="CrimsonTaxi" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="kGH-hp-lNw" id="gTT-YI-s1F"/>
+                <outlet property="selfView" destination="iN0-l3-epB" id="8dR-Ip-Sx5"/>
+                <outlet property="textField" destination="Tpk-qW-jV9" id="B79-2d-ryN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wwp-Cl-ZdM">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="83"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGU-e1-WEC">
+                            <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="83"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kGH-hp-lNw">
+                                    <rect key="frame" x="33.333333333333329" y="24.666666666666661" width="37.333333333333329" height="34.333333333333329"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="kGH-hp-lNw" secondAttribute="height" id="AIq-BY-144"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="kGH-hp-lNw" firstAttribute="centerX" secondItem="PGU-e1-WEC" secondAttribute="centerX" id="D93-Ec-bQ4"/>
+                                <constraint firstAttribute="width" secondItem="PGU-e1-WEC" secondAttribute="height" multiplier="1.25" id="Ddj-aX-XBA"/>
+                                <constraint firstItem="kGH-hp-lNw" firstAttribute="height" secondItem="PGU-e1-WEC" secondAttribute="height" multiplier="0.45" id="NdC-Qc-9tO"/>
+                                <constraint firstItem="kGH-hp-lNw" firstAttribute="centerY" secondItem="PGU-e1-WEC" secondAttribute="centerY" id="iP2-3U-iqm"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tpk-qW-jV9">
+                            <rect key="frame" x="103.66666666666666" y="0.0" width="289.33333333333337" height="83"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wwp-Cl-ZdM" secondAttribute="trailing" id="Xx3-yC-kXd"/>
+                <constraint firstItem="Wwp-Cl-ZdM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dh4-OI-EDO"/>
+                <constraint firstAttribute="bottom" secondItem="Wwp-Cl-ZdM" secondAttribute="bottom" id="mTG-2r-I8c"/>
+                <constraint firstItem="Wwp-Cl-ZdM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qud-gc-dRz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="78.625954198473281" y="-251.05633802816902"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

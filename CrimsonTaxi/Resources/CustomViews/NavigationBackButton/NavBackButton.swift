@@ -9,7 +9,7 @@ import UIKit
 
 class NavBackButton: BaseUIView {
     
-    @IBOutlet var selfView: UIView!
+    @IBOutlet weak var selfView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     
     var tapAction: CommonAction?
@@ -23,9 +23,7 @@ class NavBackButton: BaseUIView {
     private func configure() {
         applyShadow()
         clearBackground()
-        selfView.backgroundColor = Theme.current.primary
         imageView.image = UIImage(named: "navBack")
-        imageView.tintColor = .white
     }
     
     override func draw(_ rect: CGRect) {
@@ -53,7 +51,7 @@ class NavBackButton: BaseUIView {
 
 extension NavBackButton: ThemeModifiable {
     func configureColor() {
-        selfView.backgroundColor = Theme.current.primary
-        print("can can can can")
+        selfView.backgroundColor = Theme.current.navigationControl
+        imageView.tintColor = .white
     }
 }

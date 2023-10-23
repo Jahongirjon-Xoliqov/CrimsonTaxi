@@ -9,6 +9,24 @@ import UIKit
 
 extension UIView {
     
+    func wrongBoder() {
+        border(color: Theme.current.error)
+    }
+    
+    func activeBorder() {
+        border(color: Theme.current.primary)
+    }
+    
+    func inactiveBorder() {
+        border()
+    }
+    
+    func border(_ width: CGFloat = 0.2,
+                color: UIColor = Theme.current.supporting) {
+        layer.borderColor = color.cgColor
+        layer.borderWidth = width
+    }
+    
     func applyShadow() {
         clipsToBounds = false
         layer.masksToBounds = false
@@ -20,6 +38,7 @@ extension UIView {
         layer.cornerCurve = .continuous
     }
     
+    //MARK: - animations
     func fadeIn(procent: CGFloat = 0.5,
                 duration: Double = DEFAULT_ANIMATION_DURATION) {
         UIView.animate(withDuration: duration) {

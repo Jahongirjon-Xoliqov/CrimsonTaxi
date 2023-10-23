@@ -8,25 +8,33 @@
 import UIKit
 
 class PersonalDataViewController: BaseViewController {
-
+    
+    @IBOutlet weak var navTitleView: NavTitleView!
+    @IBOutlet weak var largeTitleLabel: UILabel!
+    @IBOutlet weak var inputFieldView: InputFieldView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        set(title: "Select Destination")
-        setBackButton()
+        configureAppearance()
+        configureNavTitleView()
+    }
+    
+    func configureNavTitleView() {
+        navTitleView.set(title: "Select Your Location")
+        navTitleView.enableBackButton(true)
+        navTitleView.backTapAction = { [weak self] in
+            guard let self else { return }
+            Theme.settings.updateTheme(Bool.random() ? DarkTheme() : LightTheme())
+        }
     }
     
     override func configureAppearance() {
         super.configureAppearance()
-        func processSubviews(of view: UIView) {
-            view.subviews.forEach {
-                if let vw = $0 as? ThemeModifiable {
-                    vw.configureColor()
-                }
-                processSubviews(of: $0)
-            }
-        }
-        processSubviews(of: self.view)
-        processSubviews(of: navController?.view ?? UIView())
+        largeTitleLabel.attributedText = .init(text: "Enter Your\nPersonal Details",
+                                               color: Theme.current.text,
+                                               font: .extrabold,
+                                               size: 32)
+        view.backgroundColor = Theme.current.background
     }
     
 }

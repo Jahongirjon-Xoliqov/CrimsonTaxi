@@ -21,9 +21,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBack" translatesAutoresizingMaskIntoConstraints="NO" id="uWs-V7-kIH">
-                    <rect key="frame" x="122.66666666666669" y="132.33333333333331" width="108.33333333333331" height="216.33333333333331"/>
+                    <rect key="frame" x="56.666666666666671" y="120.33333333333333" width="240.33333333333331" height="240.33333333333337"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="uWs-V7-kIH" secondAttribute="height" multiplier="0.5" id="CBw-J4-0tS"/>
+                        <constraint firstAttribute="width" secondItem="uWs-V7-kIH" secondAttribute="height" id="CBw-J4-0tS"/>
                     </constraints>
                 </imageView>
             </subviews>
@@ -31,7 +31,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <gestureRecognizers/>
             <constraints>
-                <constraint firstItem="uWs-V7-kIH" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.45" id="GKZ-px-D9G"/>
+                <constraint firstItem="uWs-V7-kIH" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="GKZ-px-D9G"/>
                 <constraint firstItem="uWs-V7-kIH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="0.9" id="KT3-Zh-t5c"/>
                 <constraint firstItem="uWs-V7-kIH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ajf-6W-Kxc"/>
             </constraints>
@@ -40,7 +40,7 @@
         </view>
     </objects>
     <resources>
-        <image name="navBack" width="10" height="18"/>
+        <image name="navBack" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

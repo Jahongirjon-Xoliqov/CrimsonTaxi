@@ -10,11 +10,15 @@
 		0A06F5C62ADD41BA006BCB4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06F5C52ADD41BA006BCB4F /* AppDelegate.swift */; };
 		0A06F5CF2ADD41BB006BCB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A06F5CE2ADD41BB006BCB4F /* Assets.xcassets */; };
 		0A06F5D22ADD41BB006BCB4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A06F5D02ADD41BB006BCB4F /* LaunchScreen.storyboard */; };
+		0A38713E2AE4479100855F45 /* AppThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38713D2AE4479100855F45 /* AppThemes.swift */; };
 		0A54DA3A2ADFAB6800F15E17 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54DA392ADFAB6800F15E17 /* BaseViewController.swift */; };
+		0A720ECB2AE57DD400511167 /* NavTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A720ECA2AE57DD400511167 /* NavTitleView.swift */; };
+		0A720ECD2AE57E2A00511167 /* NavTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A720ECC2AE57E2A00511167 /* NavTitleView.xib */; };
 		0A79A4512AE2EB66006059A9 /* NavBackButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A79A4502AE2EB66006059A9 /* NavBackButton.xib */; };
 		0A79A4532AE2EBF2006059A9 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79A4522AE2EBF2006059A9 /* BaseUIView.swift */; };
 		0A79A4552AE2F7F2006059A9 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79A4542AE2F7F2006059A9 /* UIView+Extensions.swift */; };
 		0A79A4572AE2FDFF006059A9 /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79A4562AE2FDFF006059A9 /* Contants.swift */; };
+		0AA8B8D82AE6653E000FEBF8 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8B8D72AE6653E000FEBF8 /* Optional+Extensions.swift */; };
 		0ABF34832AE2720C00CE6D0F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF34822AE2720C00CE6D0F /* Theme.swift */; };
 		0ABF34872AE2771500CE6D0F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF34862AE2771500CE6D0F /* UIColor+Extensions.swift */; };
 		0ABF348A2AE2828C00CE6D0F /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF34892AE2828C00CE6D0F /* Cache.swift */; };
@@ -33,6 +37,11 @@
 		0ABF34AD2AE2CF0C00CE6D0F /* PersonalDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABF34AB2AE2CF0C00CE6D0F /* PersonalDataViewController.xib */; };
 		0ABF34AF2AE2CFEB00CE6D0F /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF34AE2AE2CFEB00CE6D0F /* BaseNavigationController.swift */; };
 		0ABF34B32AE2D1BF00CE6D0F /* NavBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF34B22AE2D1BF00CE6D0F /* NavBackButton.swift */; };
+		0AEDE8512AE3A28F001CCFEB /* InputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDE8502AE3A28F001CCFEB /* InputFieldView.swift */; };
+		0AEDE8532AE3A5A3001CCFEB /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDE8522AE3A5A3001CCFEB /* UITextField+Extensions.swift */; };
+		0AEDE8552AE3A648001CCFEB /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDE8542AE3A648001CCFEB /* String+Extensions.swift */; };
+		0AEDE8572AE3A668001CCFEB /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDE8562AE3A668001CCFEB /* NSAttributedString+Extensions.swift */; };
+		0AEDE85B2AE3A96C001CCFEB /* InputFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AEDE85A2AE3A96C001CCFEB /* InputFieldView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,11 +50,15 @@
 		0A06F5CE2ADD41BB006BCB4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A06F5D12ADD41BB006BCB4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A06F5D32ADD41BB006BCB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A38713D2AE4479100855F45 /* AppThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemes.swift; sourceTree = "<group>"; };
 		0A54DA392ADFAB6800F15E17 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0A720ECA2AE57DD400511167 /* NavTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTitleView.swift; sourceTree = "<group>"; };
+		0A720ECC2AE57E2A00511167 /* NavTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavTitleView.xib; sourceTree = "<group>"; };
 		0A79A4502AE2EB66006059A9 /* NavBackButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavBackButton.xib; sourceTree = "<group>"; };
 		0A79A4522AE2EBF2006059A9 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
 		0A79A4542AE2F7F2006059A9 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		0A79A4562AE2FDFF006059A9 /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
+		0AA8B8D72AE6653E000FEBF8 /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 		0ABF34822AE2720C00CE6D0F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		0ABF34862AE2771500CE6D0F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		0ABF34892AE2828C00CE6D0F /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
@@ -64,6 +77,11 @@
 		0ABF34AB2AE2CF0C00CE6D0F /* PersonalDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalDataViewController.xib; sourceTree = "<group>"; };
 		0ABF34AE2AE2CFEB00CE6D0F /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0ABF34B22AE2D1BF00CE6D0F /* NavBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBackButton.swift; sourceTree = "<group>"; };
+		0AEDE8502AE3A28F001CCFEB /* InputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldView.swift; sourceTree = "<group>"; };
+		0AEDE8522AE3A5A3001CCFEB /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		0AEDE8542AE3A648001CCFEB /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		0AEDE8562AE3A668001CCFEB /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		0AEDE85A2AE3A96C001CCFEB /* InputFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputFieldView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +126,15 @@
 			path = CrimsonTaxi;
 			sourceTree = "<group>";
 		};
+		0A720EC92AE57DAB00511167 /* NavTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				0A720ECA2AE57DD400511167 /* NavTitleView.swift */,
+				0A720ECC2AE57E2A00511167 /* NavTitleView.xib */,
+			);
+			path = NavTitleView;
+			sourceTree = "<group>";
+		};
 		0ABF347F2AE271C000CE6D0F /* Sevices */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				0ABF34822AE2720C00CE6D0F /* Theme.swift */,
+				0A38713D2AE4479100855F45 /* AppThemes.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -146,9 +174,8 @@
 		0ABF34852AE2770000CE6D0F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0ABF34862AE2771500CE6D0F /* UIColor+Extensions.swift */,
-				0ABF34A62AE2A95400CE6D0F /* UIViewController+Extensions.swift */,
-				0A79A4542AE2F7F2006059A9 /* UIView+Extensions.swift */,
+				0AEDE8592AE3A67B001CCFEB /* Foundation */,
+				0AEDE8582AE3A674001CCFEB /* UIKit */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -225,6 +252,8 @@
 		0ABF34B02AE2D19600CE6D0F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				0A720EC92AE57DAB00511167 /* NavTitleView */,
+				0AEDE84D2AE3A21F001CCFEB /* InputFields */,
 				0ABF34B12AE2D1A200CE6D0F /* NavigationBackButton */,
 			);
 			path = CustomViews;
@@ -237,6 +266,36 @@
 				0A79A4502AE2EB66006059A9 /* NavBackButton.xib */,
 			);
 			path = NavigationBackButton;
+			sourceTree = "<group>";
+		};
+		0AEDE84D2AE3A21F001CCFEB /* InputFields */ = {
+			isa = PBXGroup;
+			children = (
+				0AEDE8502AE3A28F001CCFEB /* InputFieldView.swift */,
+				0AEDE85A2AE3A96C001CCFEB /* InputFieldView.xib */,
+			);
+			path = InputFields;
+			sourceTree = "<group>";
+		};
+		0AEDE8582AE3A674001CCFEB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0ABF34862AE2771500CE6D0F /* UIColor+Extensions.swift */,
+				0ABF34A62AE2A95400CE6D0F /* UIViewController+Extensions.swift */,
+				0A79A4542AE2F7F2006059A9 /* UIView+Extensions.swift */,
+				0AEDE8522AE3A5A3001CCFEB /* UITextField+Extensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		0AEDE8592AE3A67B001CCFEB /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				0AA8B8D72AE6653E000FEBF8 /* Optional+Extensions.swift */,
+				0AEDE8542AE3A648001CCFEB /* String+Extensions.swift */,
+				0AEDE8562AE3A668001CCFEB /* NSAttributedString+Extensions.swift */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,7 +363,9 @@
 				0A79A4512AE2EB66006059A9 /* NavBackButton.xib in Resources */,
 				0ABF34AD2AE2CF0C00CE6D0F /* PersonalDataViewController.xib in Resources */,
 				0ABF34A02AE2A20400CE6D0F /* Montserrat-SemiBold.ttf in Resources */,
+				0AEDE85B2AE3A96C001CCFEB /* InputFieldView.xib in Resources */,
 				0ABF34A12AE2A20400CE6D0F /* Montserrat-Light.ttf in Resources */,
+				0A720ECD2AE57E2A00511167 /* NavTitleView.xib in Resources */,
 				0ABF34902AE28DDB00CE6D0F /* TestViewController.xib in Resources */,
 				0ABF349F2AE2A20400CE6D0F /* Montserrat-Medium.ttf in Resources */,
 				0ABF34A32AE2A20400CE6D0F /* Montserrat-Regular.ttf in Resources */,
@@ -320,15 +381,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ABF34832AE2720C00CE6D0F /* Theme.swift in Sources */,
+				0AEDE8572AE3A668001CCFEB /* NSAttributedString+Extensions.swift in Sources */,
 				0ABF348A2AE2828C00CE6D0F /* Cache.swift in Sources */,
 				0ABF34AC2AE2CF0C00CE6D0F /* PersonalDataViewController.swift in Sources */,
 				0A79A4572AE2FDFF006059A9 /* Contants.swift in Sources */,
+				0A38713E2AE4479100855F45 /* AppThemes.swift in Sources */,
 				0ABF34932AE2993E00CE6D0F /* Font.swift in Sources */,
 				0A06F5C62ADD41BA006BCB4F /* AppDelegate.swift in Sources */,
 				0A79A4552AE2F7F2006059A9 /* UIView+Extensions.swift in Sources */,
 				0ABF34A72AE2A95400CE6D0F /* UIViewController+Extensions.swift in Sources */,
+				0AEDE8512AE3A28F001CCFEB /* InputFieldView.swift in Sources */,
+				0AEDE8532AE3A5A3001CCFEB /* UITextField+Extensions.swift in Sources */,
 				0A54DA3A2ADFAB6800F15E17 /* BaseViewController.swift in Sources */,
 				0ABF34B32AE2D1BF00CE6D0F /* NavBackButton.swift in Sources */,
+				0AEDE8552AE3A648001CCFEB /* String+Extensions.swift in Sources */,
+				0A720ECB2AE57DD400511167 /* NavTitleView.swift in Sources */,
+				0AA8B8D82AE6653E000FEBF8 /* Optional+Extensions.swift in Sources */,
 				0ABF348F2AE28DDB00CE6D0F /* TestViewController.swift in Sources */,
 				0ABF34AF2AE2CFEB00CE6D0F /* BaseNavigationController.swift in Sources */,
 				0ABF34872AE2771500CE6D0F /* UIColor+Extensions.swift in Sources */,

@@ -25,18 +25,16 @@ class BaseViewController: UIViewController {
         Theme.settings.remove(self)
     }
     func backTap() {}
-    func configureAppearance() {}
-}
-
-extension BaseViewController {
-    func set(title: String) {
-        navController?.set(title: title)
-    }
-    func setBackButton() {
-        navController?.setBackButton { [weak self] in
-            guard let self else { return }
-            self.backTap()
+    func configureAppearance() {
+        func processSubviews(of view: UIView) {
+            view.subviews.forEach {
+                if let vw = $0 as? ThemeModifiable {
+                    vw.configureColor()
+                }
+                processSubviews(of: $0)
+            }
         }
+        processSubviews(of: self.view)
     }
 }
 

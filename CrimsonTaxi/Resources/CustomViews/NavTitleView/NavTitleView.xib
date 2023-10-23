@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavTitleView" customModule="CrimsonTaxi" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="VR6-0Y-fx7" id="x1j-Pm-Aq6"/>
+                <outlet property="selfView" destination="iN0-l3-epB" id="eG3-pE-Es7"/>
+                <outlet property="titleLabel" destination="jto-1M-pSy" id="jkE-yr-Brm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="99"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VR6-0Y-fx7" customClass="NavBackButton" customModule="CrimsonTaxi" customModuleProvider="target">
+                    <rect key="frame" x="30" y="29.666666666666671" width="40" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Jb0-Tf-Bc2"/>
+                        <constraint firstAttribute="width" constant="40" id="fDl-xK-amQ"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jto-1M-pSy">
+                    <rect key="frame" x="70" y="0.0" width="253" height="99"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VR6-0Y-fx7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="1dQ-zu-tX5"/>
+                <constraint firstItem="jto-1M-pSy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8Kk-zH-26L"/>
+                <constraint firstItem="jto-1M-pSy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oiK-rq-jHJ"/>
+                <constraint firstItem="jto-1M-pSy" firstAttribute="centerY" secondItem="VR6-0Y-fx7" secondAttribute="centerY" id="qd2-VZ-evD"/>
+                <constraint firstAttribute="bottom" secondItem="jto-1M-pSy" secondAttribute="bottom" id="wbc-mW-CU5"/>
+                <constraint firstItem="jto-1M-pSy" firstAttribute="leading" secondItem="VR6-0Y-fx7" secondAttribute="trailing" id="z1h-Eh-kZC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="113.74045801526717" y="-246.12676056338029"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
