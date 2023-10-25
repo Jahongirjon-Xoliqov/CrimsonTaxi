@@ -10,8 +10,26 @@
 		0A06F5C62ADD41BA006BCB4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06F5C52ADD41BA006BCB4F /* AppDelegate.swift */; };
 		0A06F5CF2ADD41BB006BCB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A06F5CE2ADD41BB006BCB4F /* Assets.xcassets */; };
 		0A06F5D22ADD41BB006BCB4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A06F5D02ADD41BB006BCB4F /* LaunchScreen.storyboard */; };
+		0A1D43DB2AE7998000D9D545 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D43D92AE7998000D9D545 /* MainTabBarController.swift */; };
+		0A1D43DF2AE79E8E00D9D545 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D43DE2AE79E8E00D9D545 /* MainTabBarView.swift */; };
+		0A1D43E12AE7A1EB00D9D545 /* MainTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1D43E02AE7A1EB00D9D545 /* MainTabBarView.xib */; };
+		0A1D43E52AE7B2BE00D9D545 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D43E32AE7B2BE00D9D545 /* HomeViewController.swift */; };
+		0A1D43E62AE7B2BE00D9D545 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1D43E42AE7B2BE00D9D545 /* HomeViewController.xib */; };
+		0A1D43EA2AE7B88500D9D545 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D43E92AE7B88500D9D545 /* MapView.swift */; };
+		0A1D43EC2AE7B8DE00D9D545 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1D43EB2AE7B8DE00D9D545 /* MapView.xib */; };
+		0A1D43F02AE7BC4E00D9D545 /* PlaceSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D43EE2AE7BC4E00D9D545 /* PlaceSearchViewController.swift */; };
+		0A1D43F12AE7BC4E00D9D545 /* PlaceSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1D43EF2AE7BC4E00D9D545 /* PlaceSearchViewController.xib */; };
+		0A1D43F42AE7BDDE00D9D545 /* SearchFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D43F32AE7BDDE00D9D545 /* SearchFieldView.swift */; };
+		0A1D43F62AE7BE0D00D9D545 /* SearchFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1D43F52AE7BE0D00D9D545 /* SearchFieldView.xib */; };
 		0A38713E2AE4479100855F45 /* AppThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38713D2AE4479100855F45 /* AppThemes.swift */; };
 		0A54DA3A2ADFAB6800F15E17 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54DA392ADFAB6800F15E17 /* BaseViewController.swift */; };
+		0A556A662AE9152C0053A5BA /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A556A652AE9152C0053A5BA /* CGFloat+Extensions.swift */; };
+		0A556A6A2AE95EE40053A5BA /* RideDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A556A682AE95EE40053A5BA /* RideDetailsViewController.swift */; };
+		0A556A6B2AE95EE40053A5BA /* RideDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A556A692AE95EE40053A5BA /* RideDetailsViewController.xib */; };
+		0A556A6E2AE960440053A5BA /* PlaceCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A556A6D2AE960440053A5BA /* PlaceCircleView.swift */; };
+		0A556A702AE961020053A5BA /* PlaceCircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A556A6F2AE961020053A5BA /* PlaceCircleView.xib */; };
+		0A556A732AE964540053A5BA /* PlaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A556A722AE964540053A5BA /* PlaceDetailsView.swift */; };
+		0A556A752AE964A30053A5BA /* PlaceDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A556A742AE964A30053A5BA /* PlaceDetailsView.xib */; };
 		0A720ECB2AE57DD400511167 /* NavTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A720ECA2AE57DD400511167 /* NavTitleView.swift */; };
 		0A720ECD2AE57E2A00511167 /* NavTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A720ECC2AE57E2A00511167 /* NavTitleView.xib */; };
 		0A79A4512AE2EB66006059A9 /* NavBackButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A79A4502AE2EB66006059A9 /* NavBackButton.xib */; };
@@ -61,8 +79,26 @@
 		0A06F5CE2ADD41BB006BCB4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A06F5D12ADD41BB006BCB4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A06F5D32ADD41BB006BCB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A1D43D92AE7998000D9D545 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		0A1D43DE2AE79E8E00D9D545 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		0A1D43E02AE7A1EB00D9D545 /* MainTabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarView.xib; sourceTree = "<group>"; };
+		0A1D43E32AE7B2BE00D9D545 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0A1D43E42AE7B2BE00D9D545 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		0A1D43E92AE7B88500D9D545 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0A1D43EB2AE7B8DE00D9D545 /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		0A1D43EE2AE7BC4E00D9D545 /* PlaceSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchViewController.swift; sourceTree = "<group>"; };
+		0A1D43EF2AE7BC4E00D9D545 /* PlaceSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceSearchViewController.xib; sourceTree = "<group>"; };
+		0A1D43F32AE7BDDE00D9D545 /* SearchFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldView.swift; sourceTree = "<group>"; };
+		0A1D43F52AE7BE0D00D9D545 /* SearchFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFieldView.xib; sourceTree = "<group>"; };
 		0A38713D2AE4479100855F45 /* AppThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemes.swift; sourceTree = "<group>"; };
 		0A54DA392ADFAB6800F15E17 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0A556A652AE9152C0053A5BA /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		0A556A682AE95EE40053A5BA /* RideDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideDetailsViewController.swift; sourceTree = "<group>"; };
+		0A556A692AE95EE40053A5BA /* RideDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RideDetailsViewController.xib; sourceTree = "<group>"; };
+		0A556A6D2AE960440053A5BA /* PlaceCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCircleView.swift; sourceTree = "<group>"; };
+		0A556A6F2AE961020053A5BA /* PlaceCircleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCircleView.xib; sourceTree = "<group>"; };
+		0A556A722AE964540053A5BA /* PlaceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsView.swift; sourceTree = "<group>"; };
+		0A556A742AE964A30053A5BA /* PlaceDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceDetailsView.xib; sourceTree = "<group>"; };
 		0A720ECA2AE57DD400511167 /* NavTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTitleView.swift; sourceTree = "<group>"; };
 		0A720ECC2AE57E2A00511167 /* NavTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavTitleView.xib; sourceTree = "<group>"; };
 		0A79A4502AE2EB66006059A9 /* NavBackButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavBackButton.xib; sourceTree = "<group>"; };
@@ -147,6 +183,99 @@
 				0A06F5D32ADD41BB006BCB4F /* Info.plist */,
 			);
 			path = CrimsonTaxi;
+			sourceTree = "<group>";
+		};
+		0A1D43D62AE796DA00D9D545 /* MainTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D43DD2AE79E7500D9D545 /* Views */,
+				0A1D43D92AE7998000D9D545 /* MainTabBarController.swift */,
+			);
+			path = MainTabBarController;
+			sourceTree = "<group>";
+		};
+		0A1D43DD2AE79E7500D9D545 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D43DE2AE79E8E00D9D545 /* MainTabBarView.swift */,
+				0A1D43E02AE7A1EB00D9D545 /* MainTabBarView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A1D43E22AE7B2A200D9D545 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0A556A672AE95EAA0053A5BA /* RideDetails */,
+				0A1D43ED2AE7BC3700D9D545 /* PlaceSearch */,
+				0A1D43E72AE7B85200D9D545 /* Views */,
+				0A1D43E32AE7B2BE00D9D545 /* HomeViewController.swift */,
+				0A1D43E42AE7B2BE00D9D545 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0A1D43E72AE7B85200D9D545 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D43E82AE7B86000D9D545 /* Map */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A1D43E82AE7B86000D9D545 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D43E92AE7B88500D9D545 /* MapView.swift */,
+				0A1D43EB2AE7B8DE00D9D545 /* MapView.xib */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		0A1D43ED2AE7BC3700D9D545 /* PlaceSearch */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D43F22AE7BDBF00D9D545 /* Views */,
+				0A1D43EE2AE7BC4E00D9D545 /* PlaceSearchViewController.swift */,
+				0A1D43EF2AE7BC4E00D9D545 /* PlaceSearchViewController.xib */,
+			);
+			path = PlaceSearch;
+			sourceTree = "<group>";
+		};
+		0A1D43F22AE7BDBF00D9D545 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D43F32AE7BDDE00D9D545 /* SearchFieldView.swift */,
+				0A1D43F52AE7BE0D00D9D545 /* SearchFieldView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A556A672AE95EAA0053A5BA /* RideDetails */ = {
+			isa = PBXGroup;
+			children = (
+				0A556A682AE95EE40053A5BA /* RideDetailsViewController.swift */,
+				0A556A692AE95EE40053A5BA /* RideDetailsViewController.xib */,
+			);
+			path = RideDetails;
+			sourceTree = "<group>";
+		};
+		0A556A6C2AE960100053A5BA /* PlaceCircleView */ = {
+			isa = PBXGroup;
+			children = (
+				0A556A6D2AE960440053A5BA /* PlaceCircleView.swift */,
+				0A556A6F2AE961020053A5BA /* PlaceCircleView.xib */,
+			);
+			path = PlaceCircleView;
+			sourceTree = "<group>";
+		};
+		0A556A712AE9643E0053A5BA /* PlaceDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				0A556A722AE964540053A5BA /* PlaceDetailsView.swift */,
+				0A556A742AE964A30053A5BA /* PlaceDetailsView.xib */,
+			);
+			path = PlaceDetailsView;
 			sourceTree = "<group>";
 		};
 		0A720EC92AE57DAB00511167 /* NavTitleView */ = {
@@ -260,6 +389,8 @@
 		0ABF348B2AE28D9100CE6D0F /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				0A1D43E22AE7B2A200D9D545 /* Home */,
+				0A1D43D62AE796DA00D9D545 /* MainTabBarController */,
 				0A8042182AE6C1B700EFF450 /* Varification */,
 				0ABF34A82AE2CDBE00CE6D0F /* Registration */,
 				0ABF34912AE290D500CE6D0F /* Base */,
@@ -323,6 +454,8 @@
 		0ABF34B02AE2D19600CE6D0F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				0A556A712AE9643E0053A5BA /* PlaceDetailsView */,
+				0A556A6C2AE960100053A5BA /* PlaceCircleView */,
 				0A80421D2AE6C9E600EFF450 /* OTP */,
 				0A8042132AE6B35B00EFF450 /* PrimaryButton */,
 				0AA8B8E72AE69515000FEBF8 /* SeletableView */,
@@ -368,6 +501,7 @@
 				0AA8B8D72AE6653E000FEBF8 /* Optional+Extensions.swift */,
 				0AEDE8542AE3A648001CCFEB /* String+Extensions.swift */,
 				0AEDE8562AE3A668001CCFEB /* NSAttributedString+Extensions.swift */,
+				0A556A652AE9152C0053A5BA /* CGFloat+Extensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -434,16 +568,24 @@
 				0ABF34A52AE2A49200CE6D0F /* Montserrat-Thin.ttf in Resources */,
 				0ABF349E2AE2A20400CE6D0F /* Montserrat-ExtraBold.ttf in Resources */,
 				0A8042172AE6B3E300EFF450 /* SelectableView.xib in Resources */,
+				0A1D43E12AE7A1EB00D9D545 /* MainTabBarView.xib in Resources */,
+				0A556A702AE961020053A5BA /* PlaceCircleView.xib in Resources */,
+				0A556A752AE964A30053A5BA /* PlaceDetailsView.xib in Resources */,
 				0AA8B8E92AE69529000FEBF8 /* PrimaryButton.xib in Resources */,
+				0A1D43E62AE7B2BE00D9D545 /* HomeViewController.xib in Resources */,
 				0ABF349D2AE2A20400CE6D0F /* Montserrat-Bold.ttf in Resources */,
 				0A06F5D22ADD41BB006BCB4F /* LaunchScreen.storyboard in Resources */,
+				0A1D43F12AE7BC4E00D9D545 /* PlaceSearchViewController.xib in Resources */,
+				0A1D43F62AE7BE0D00D9D545 /* SearchFieldView.xib in Resources */,
 				0A79A4512AE2EB66006059A9 /* NavBackButton.xib in Resources */,
 				0A8042282AE6CB6200EFF450 /* OtpView.xib in Resources */,
 				0ABF34AD2AE2CF0C00CE6D0F /* PersonalDataViewController.xib in Resources */,
+				0A556A6B2AE95EE40053A5BA /* RideDetailsViewController.xib in Resources */,
 				0ABF34A02AE2A20400CE6D0F /* Montserrat-SemiBold.ttf in Resources */,
 				0AEDE85B2AE3A96C001CCFEB /* InputFieldView.xib in Resources */,
 				0ABF34A12AE2A20400CE6D0F /* Montserrat-Light.ttf in Resources */,
 				0A720ECD2AE57E2A00511167 /* NavTitleView.xib in Resources */,
+				0A1D43EC2AE7B8DE00D9D545 /* MapView.xib in Resources */,
 				0AA8B8DD2AE66C61000FEBF8 /* Localizable.strings in Resources */,
 				0ABF34902AE28DDB00CE6D0F /* TestViewController.xib in Resources */,
 				0ABF349F2AE2A20400CE6D0F /* Montserrat-Medium.ttf in Resources */,
@@ -465,17 +607,25 @@
 				0ABF348A2AE2828C00CE6D0F /* Cache.swift in Sources */,
 				0ABF34AC2AE2CF0C00CE6D0F /* PersonalDataViewController.swift in Sources */,
 				0A79A4572AE2FDFF006059A9 /* Contants.swift in Sources */,
+				0A1D43E52AE7B2BE00D9D545 /* HomeViewController.swift in Sources */,
 				0A8042262AE6CB6200EFF450 /* OtpView.swift in Sources */,
 				0A38713E2AE4479100855F45 /* AppThemes.swift in Sources */,
 				0ABF34932AE2993E00CE6D0F /* Font.swift in Sources */,
 				0A06F5C62ADD41BA006BCB4F /* AppDelegate.swift in Sources */,
+				0A1D43EA2AE7B88500D9D545 /* MapView.swift in Sources */,
 				0A8042152AE6B39200EFF450 /* SelectableView.swift in Sources */,
+				0A1D43DB2AE7998000D9D545 /* MainTabBarController.swift in Sources */,
+				0A1D43DF2AE79E8E00D9D545 /* MainTabBarView.swift in Sources */,
+				0A556A662AE9152C0053A5BA /* CGFloat+Extensions.swift in Sources */,
 				0A79A4552AE2F7F2006059A9 /* UIView+Extensions.swift in Sources */,
+				0A556A6A2AE95EE40053A5BA /* RideDetailsViewController.swift in Sources */,
 				0ABF34A72AE2A95400CE6D0F /* UIViewController+Extensions.swift in Sources */,
+				0A556A6E2AE960440053A5BA /* PlaceCircleView.swift in Sources */,
 				0AEDE8512AE3A28F001CCFEB /* InputFieldView.swift in Sources */,
 				0A8042292AE6CB6200EFF450 /* OtpViewDecorator.swift in Sources */,
 				0AEDE8532AE3A5A3001CCFEB /* UITextField+Extensions.swift in Sources */,
 				0AA8B8E62AE694AC000FEBF8 /* PrimaryButton.swift in Sources */,
+				0A1D43F02AE7BC4E00D9D545 /* PlaceSearchViewController.swift in Sources */,
 				0A54DA3A2ADFAB6800F15E17 /* BaseViewController.swift in Sources */,
 				0ABF34B32AE2D1BF00CE6D0F /* NavBackButton.swift in Sources */,
 				0AEDE8552AE3A648001CCFEB /* String+Extensions.swift in Sources */,
@@ -483,10 +633,12 @@
 				0A80421B2AE6C1ED00EFF450 /* VerificationViewController.swift in Sources */,
 				0AA8B8D82AE6653E000FEBF8 /* Optional+Extensions.swift in Sources */,
 				0ABF348F2AE28DDB00CE6D0F /* TestViewController.swift in Sources */,
+				0A556A732AE964540053A5BA /* PlaceDetailsView.swift in Sources */,
 				0ABF34AF2AE2CFEB00CE6D0F /* BaseNavigationController.swift in Sources */,
 				0ABF34872AE2771500CE6D0F /* UIColor+Extensions.swift in Sources */,
 				0A79A4532AE2EBF2006059A9 /* BaseUIView.swift in Sources */,
 				0A8042272AE6CB6200EFF450 /* OtpTextField.swift in Sources */,
+				0A1D43F42AE7BDDE00D9D545 /* SearchFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()
-        window?.rootViewController = BaseNavigationController(rootViewController: PersonalDataViewController())
+        window?.rootViewController = MainTabBarController()//BaseNavigationController(rootViewController: PersonalDataViewController())
         window?.makeKeyAndVisible()
         return true
     }
