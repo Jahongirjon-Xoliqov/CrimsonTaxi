@@ -10,12 +10,12 @@ import UIKit
 
 public struct OtpViewDecorator {
     
-    var defaultBorderColor: UIColor = Theme.current.supportingBacground
+    var defaultBorderColor: UIColor = Theme.current.supportingBackground
     var focusedBorderColor: UIColor = Theme.current.primary
     var cornerRadius: CGFloat = 16
     var borderWidth: CGFloat = 1
-    var defaultFillColor = Theme.current.supportingBacground
-    var focusedFillColor = Theme.current.supportingBacground
+    var defaultFillColor = Theme.current.supportingBackground
+    var focusedFillColor = Theme.current.supportingBackground
     var isCircle: Bool = false
     var hideCursor = true
     var isSecuredTextEntry = false

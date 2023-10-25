@@ -52,6 +52,6 @@ class NavBackButton: BaseUIView {
 extension NavBackButton: ThemeModifiable {
     func configureColor() {
         selfView.backgroundColor = Theme.current.navigationControl
-        imageView.tintColor = .white
+        imageView.tintColor = Theme.current.appWhite
     }
 }

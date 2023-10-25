@@ -12,12 +12,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RideDetailsViewController" customModule="CrimsonTaxi" customModuleProvider="target">
             <connections>
                 <outlet property="dashView" destination="38s-5F-TTh" id="6Mb-ho-HPc"/>
+                <outlet property="destinationEditButton" destination="Q1V-1X-4qE" id="Phi-7h-MxJ"/>
                 <outlet property="destinationPlaceView" destination="eh6-os-AGZ" id="GvL-VF-lJB"/>
                 <outlet property="distanceHintLabel" destination="6fT-bZ-pBS" id="uPh-nO-6UU"/>
                 <outlet property="distanceLabel" destination="NIr-iY-ohN" id="BBd-hP-w7Y"/>
                 <outlet property="dragView" destination="3qc-f8-ac3" id="NQs-Bm-B2c"/>
                 <outlet property="orderButton" destination="gcj-F2-QW2" id="QZG-aU-16R"/>
                 <outlet property="separatorView" destination="qiz-AO-znk" id="VSM-W9-8PF"/>
+                <outlet property="sourceEditButton" destination="QuO-NC-qdQ" id="EbB-U7-Tlb"/>
                 <outlet property="sourcePlaceView" destination="iw2-SK-QFo" id="JzP-9G-vEn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -60,14 +62,14 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iw2-SK-QFo" customClass="PlaceDetailsView" customModule="CrimsonTaxi" customModuleProvider="target">
-                    <rect key="frame" x="30" y="117.33333333333331" width="333" height="60"/>
+                    <rect key="frame" x="30" y="117.33333333333331" width="273" height="60"/>
                     <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="WZn-bx-pMw"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eh6-os-AGZ" customClass="PlaceDetailsView" customModule="CrimsonTaxi" customModuleProvider="target">
-                    <rect key="frame" x="30" y="207.33333333333334" width="333" height="60.000000000000028"/>
+                    <rect key="frame" x="30" y="207.33333333333334" width="273" height="60.000000000000028"/>
                     <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="yqo-rP-6rp"/>
@@ -87,12 +89,27 @@
                         <constraint firstAttribute="width" constant="60" id="NCH-FG-ZNY"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QuO-NC-qdQ" customClass="IconButton" customModule="CrimsonTaxi" customModuleProvider="target">
+                    <rect key="frame" x="303" y="117.33333333333331" width="60" height="60"/>
+                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="2Qi-rZ-Wbu"/>
+                        <constraint firstAttribute="height" constant="60" id="UlW-3C-MtL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1V-1X-4qE" customClass="IconButton" customModule="CrimsonTaxi" customModuleProvider="target">
+                    <rect key="frame" x="303" y="207.33333333333334" width="60" height="60.000000000000028"/>
+                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="KOx-Ss-xOc"/>
+                        <constraint firstAttribute="width" constant="60" id="X7w-VJ-8rD"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iw2-SK-QFo" secondAttribute="trailing" constant="30" id="3zK-hw-9EH"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eh6-os-AGZ" secondAttribute="trailing" constant="30" id="4fb-ln-Ij1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QuO-NC-qdQ" secondAttribute="trailing" constant="30" id="2qP-zD-SMH"/>
                 <constraint firstItem="iw2-SK-QFo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="6qg-Vg-iwU"/>
                 <constraint firstItem="qiz-AO-znk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8fZ-Q2-IPb"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e6P-wo-Wcd" secondAttribute="trailing" constant="30" id="Bjt-Hr-KVY"/>
@@ -100,17 +117,22 @@
                 <constraint firstItem="eh6-os-AGZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Gbx-eX-DEg"/>
                 <constraint firstItem="3qc-f8-ac3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H79-xG-DD9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qiz-AO-znk" secondAttribute="trailing" id="PcQ-yI-CJG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gcj-F2-QW2" secondAttribute="trailing" constant="30" id="SBM-tP-Otc"/>
                 <constraint firstItem="gcj-F2-QW2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Wty-tJ-zlM"/>
                 <constraint firstItem="38s-5F-TTh" firstAttribute="top" secondItem="iw2-SK-QFo" secondAttribute="bottom" id="aeY-zZ-lwQ"/>
                 <constraint firstItem="38s-5F-TTh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="cG2-44-AOC"/>
                 <constraint firstItem="eh6-os-AGZ" firstAttribute="top" secondItem="38s-5F-TTh" secondAttribute="bottom" id="dbd-3g-hnO"/>
+                <constraint firstItem="Q1V-1X-4qE" firstAttribute="top" secondItem="QuO-NC-qdQ" secondAttribute="bottom" constant="30" id="eq0-oG-3Ea"/>
                 <constraint firstItem="eh6-os-AGZ" firstAttribute="top" secondItem="iw2-SK-QFo" secondAttribute="bottom" constant="30" id="euM-Ah-aR3"/>
+                <constraint firstItem="QuO-NC-qdQ" firstAttribute="leading" secondItem="iw2-SK-QFo" secondAttribute="trailing" id="hgQ-un-YYu"/>
                 <constraint firstItem="e6P-wo-Wcd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="mo3-W2-tiT"/>
                 <constraint firstItem="e6P-wo-Wcd" firstAttribute="top" secondItem="3qc-f8-ac3" secondAttribute="bottom" constant="20" id="oJn-xA-Yy5"/>
+                <constraint firstItem="QuO-NC-qdQ" firstAttribute="top" secondItem="qiz-AO-znk" secondAttribute="bottom" constant="30" id="oq8-55-wtj"/>
                 <constraint firstItem="qiz-AO-znk" firstAttribute="top" secondItem="e6P-wo-Wcd" secondAttribute="bottom" constant="20" id="p5B-Rg-UNt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Q1V-1X-4qE" secondAttribute="trailing" constant="30" id="qjc-Um-fBP"/>
                 <constraint firstItem="3qc-f8-ac3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="rcK-oW-WuR"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gcj-F2-QW2" secondAttribute="trailing" constant="30" id="sID-mA-fTY"/>
                 <constraint firstItem="iw2-SK-QFo" firstAttribute="top" secondItem="qiz-AO-znk" secondAttribute="bottom" constant="30" id="uRY-vJ-nhn"/>
+                <constraint firstItem="Q1V-1X-4qE" firstAttribute="leading" secondItem="eh6-os-AGZ" secondAttribute="trailing" id="xpH-Vs-5l2"/>
             </constraints>
             <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
         </view>

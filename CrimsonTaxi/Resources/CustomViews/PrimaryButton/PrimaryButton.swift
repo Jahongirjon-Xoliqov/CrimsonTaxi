@@ -38,12 +38,12 @@ class PrimaryButton: BaseUIView {
     
     func set(image: UIImage?) {
         imageView.image = image
-        imageView.tintColor = .white
+        imageView.tintColor = Theme.current.appWhite
     }
     
     func set(title: String?) {
         titleLabel.attributedText = Attr.create(text: title.nonNil,
-                                                color: .white,
+                                                color: Theme.current.appWhite,
                                                 font: .semibold,
                                                 size: 17)
     }

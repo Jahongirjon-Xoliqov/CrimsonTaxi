@@ -45,10 +45,10 @@ class SelectableView: BaseUIView {
         case .seleted:
             selfView.clearBorder()
             primaryButtonShadow()
-            imageView.tintColor = .white
+            imageView.tintColor = Theme.current.appWhite
             selfView.backgroundColor = Theme.current.primary
             titleLabel.attributedText = Attr.create(text: title.nonNil,
-                                                    color: .white,
+                                                    color: Theme.current.appWhite,
                                                     font: .regular,
                                                     size: 14)
         case .default:

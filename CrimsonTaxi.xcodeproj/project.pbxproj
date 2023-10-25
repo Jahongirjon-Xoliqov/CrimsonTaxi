@@ -66,6 +66,8 @@
 		0ABF34AD2AE2CF0C00CE6D0F /* PersonalDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABF34AB2AE2CF0C00CE6D0F /* PersonalDataViewController.xib */; };
 		0ABF34AF2AE2CFEB00CE6D0F /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF34AE2AE2CFEB00CE6D0F /* BaseNavigationController.swift */; };
 		0ABF34B32AE2D1BF00CE6D0F /* NavBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF34B22AE2D1BF00CE6D0F /* NavBackButton.swift */; };
+		0AD3BF5C2AE989B0002AB3B3 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3BF5B2AE989B0002AB3B3 /* IconButton.swift */; };
+		0AD3BF5E2AE989F5002AB3B3 /* IconButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD3BF5D2AE989F5002AB3B3 /* IconButton.xib */; };
 		0AEDE8512AE3A28F001CCFEB /* InputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDE8502AE3A28F001CCFEB /* InputFieldView.swift */; };
 		0AEDE8532AE3A5A3001CCFEB /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDE8522AE3A5A3001CCFEB /* UITextField+Extensions.swift */; };
 		0AEDE8552AE3A648001CCFEB /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDE8542AE3A648001CCFEB /* String+Extensions.swift */; };
@@ -136,6 +138,8 @@
 		0ABF34AB2AE2CF0C00CE6D0F /* PersonalDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalDataViewController.xib; sourceTree = "<group>"; };
 		0ABF34AE2AE2CFEB00CE6D0F /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0ABF34B22AE2D1BF00CE6D0F /* NavBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBackButton.swift; sourceTree = "<group>"; };
+		0AD3BF5B2AE989B0002AB3B3 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		0AD3BF5D2AE989F5002AB3B3 /* IconButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconButton.xib; sourceTree = "<group>"; };
 		0AEDE8502AE3A28F001CCFEB /* InputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldView.swift; sourceTree = "<group>"; };
 		0AEDE8522AE3A5A3001CCFEB /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		0AEDE8542AE3A648001CCFEB /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -454,6 +458,7 @@
 		0ABF34B02AE2D19600CE6D0F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				0AD3BF5A2AE98975002AB3B3 /* IconButton */,
 				0A556A712AE9643E0053A5BA /* PlaceDetailsView */,
 				0A556A6C2AE960100053A5BA /* PlaceCircleView */,
 				0A80421D2AE6C9E600EFF450 /* OTP */,
@@ -473,6 +478,15 @@
 				0A79A4502AE2EB66006059A9 /* NavBackButton.xib */,
 			);
 			path = NavigationBackButton;
+			sourceTree = "<group>";
+		};
+		0AD3BF5A2AE98975002AB3B3 /* IconButton */ = {
+			isa = PBXGroup;
+			children = (
+				0AD3BF5B2AE989B0002AB3B3 /* IconButton.swift */,
+				0AD3BF5D2AE989F5002AB3B3 /* IconButton.xib */,
+			);
+			path = IconButton;
 			sourceTree = "<group>";
 		};
 		0AEDE84D2AE3A21F001CCFEB /* InputFields */ = {
@@ -577,6 +591,7 @@
 				0A06F5D22ADD41BB006BCB4F /* LaunchScreen.storyboard in Resources */,
 				0A1D43F12AE7BC4E00D9D545 /* PlaceSearchViewController.xib in Resources */,
 				0A1D43F62AE7BE0D00D9D545 /* SearchFieldView.xib in Resources */,
+				0AD3BF5E2AE989F5002AB3B3 /* IconButton.xib in Resources */,
 				0A79A4512AE2EB66006059A9 /* NavBackButton.xib in Resources */,
 				0A8042282AE6CB6200EFF450 /* OtpView.xib in Resources */,
 				0ABF34AD2AE2CF0C00CE6D0F /* PersonalDataViewController.xib in Resources */,
@@ -604,6 +619,7 @@
 			files = (
 				0ABF34832AE2720C00CE6D0F /* Theme.swift in Sources */,
 				0AEDE8572AE3A668001CCFEB /* NSAttributedString+Extensions.swift in Sources */,
+				0AD3BF5C2AE989B0002AB3B3 /* IconButton.swift in Sources */,
 				0ABF348A2AE2828C00CE6D0F /* Cache.swift in Sources */,
 				0ABF34AC2AE2CF0C00CE6D0F /* PersonalDataViewController.swift in Sources */,
 				0A79A4572AE2FDFF006059A9 /* Contants.swift in Sources */,

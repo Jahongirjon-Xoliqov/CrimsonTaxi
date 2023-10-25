@@ -17,6 +17,9 @@ class RideDetailsViewController: BaseViewController {
     @IBOutlet weak var destinationPlaceView: PlaceDetailsView!
     @IBOutlet weak var orderButton: PrimaryButton!
     @IBOutlet weak var dashView: UIView!
+    @IBOutlet weak var sourceEditButton: IconButton!
+    @IBOutlet weak var destinationEditButton: IconButton!
+    
     
     private var touchPoint: CGPoint?
     var FINAL_POINT: CGFloat = SCREEN_SIZE.height - safeAreaBottomHeight - 500
@@ -28,7 +31,6 @@ class RideDetailsViewController: BaseViewController {
         
         dragView.clipsToBounds = true
         dragView.clip(radius: 3)
-        dragView.backgroundColor = Theme.current.supporting
         
         distanceHintLabel.attributedText = Attr.create(text: "Distance", 
                                                        color: Theme.current.text,
@@ -42,8 +44,6 @@ class RideDetailsViewController: BaseViewController {
                                                    size: 17,
                                                    align: .right)
         
-        separatorView.backgroundColor = Theme.current.supporting
-        
         sourcePlaceView.set(image: UIImage(named: "targetLarge"))
         sourcePlaceView.set(place: "Current Location", details: "45 Tyler Streets, VA\n17333")
         
@@ -51,6 +51,9 @@ class RideDetailsViewController: BaseViewController {
         destinationPlaceView.set(place: "Starbucks", details: "453 William Trail Apt. 896\nLesterstad")
         
         orderButton.set(title: "6 000 som ga taksi chaqirish")
+        
+        sourceEditButton.set(image: UIImage(named: "edit"))
+        destinationEditButton.set(image: UIImage(named: "edit"))
         
     }
     
@@ -64,6 +67,10 @@ class RideDetailsViewController: BaseViewController {
         view.clip(radius: 16)
         view.applyShadow(opacity: 0.3)
         view.backgroundColor = Theme.current.background
+        dragView.backgroundColor = Theme.current.supportingShade
+        separatorView.backgroundColor = Theme.current.separator
+        sourceEditButton.iconTintColor = Theme.current.primary
+        destinationEditButton.iconTintColor = Theme.current.primary
     }
     
     func drawRoad() {
