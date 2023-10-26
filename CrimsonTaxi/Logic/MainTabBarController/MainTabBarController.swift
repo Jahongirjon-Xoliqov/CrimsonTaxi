@@ -35,7 +35,7 @@ class MainTabBarController: UITabBarController {
         }
     
         let homeViewController = BaseNavigationController(rootViewController: HomeViewController())
-        let profileViewController = BaseNavigationController(rootViewController: VerificationViewController())
+        let profileViewController = BaseNavigationController(rootViewController: ProfileViewController())
         
         setViewControllers([homeViewController, profileViewController], animated: false)
         

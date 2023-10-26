@@ -46,8 +46,8 @@ final class Theme {
     fileprivate struct ThemeFormatter {
         func convert(_ index: Int) -> Themeable {
             switch index {
-            case 0: DarkTheme()
-            case 1: LightTheme()
+            case 0: LightTheme()
+            case 1: DarkTheme()
             case 2: CrimsonTheme()
             default: LightTheme()
             }

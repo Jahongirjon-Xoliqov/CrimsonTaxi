@@ -22,6 +22,12 @@
 		0A1D43F42AE7BDDE00D9D545 /* SearchFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D43F32AE7BDDE00D9D545 /* SearchFieldView.swift */; };
 		0A1D43F62AE7BE0D00D9D545 /* SearchFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1D43F52AE7BE0D00D9D545 /* SearchFieldView.xib */; };
 		0A38713E2AE4479100855F45 /* AppThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38713D2AE4479100855F45 /* AppThemes.swift */; };
+		0A51A5402AEA37480023C253 /* DriverDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A51A53E2AEA37480023C253 /* DriverDetailsViewController.swift */; };
+		0A51A5412AEA37480023C253 /* DriverDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A51A53F2AEA37480023C253 /* DriverDetailsViewController.xib */; };
+		0A51A5452AEA58ED0023C253 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A51A5432AEA58ED0023C253 /* ProfileViewController.swift */; };
+		0A51A5462AEA58ED0023C253 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A51A5442AEA58ED0023C253 /* ProfileViewController.xib */; };
+		0A51A5492AEA5FC20023C253 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A51A5482AEA5FC20023C253 /* AppButton.swift */; };
+		0A51A54B2AEA6A120023C253 /* AppButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A51A54A2AEA6A120023C253 /* AppButton.xib */; };
 		0A54DA3A2ADFAB6800F15E17 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54DA392ADFAB6800F15E17 /* BaseViewController.swift */; };
 		0A556A662AE9152C0053A5BA /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A556A652AE9152C0053A5BA /* CGFloat+Extensions.swift */; };
 		0A556A6A2AE95EE40053A5BA /* RideDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A556A682AE95EE40053A5BA /* RideDetailsViewController.swift */; };
@@ -93,6 +99,12 @@
 		0A1D43F32AE7BDDE00D9D545 /* SearchFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldView.swift; sourceTree = "<group>"; };
 		0A1D43F52AE7BE0D00D9D545 /* SearchFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFieldView.xib; sourceTree = "<group>"; };
 		0A38713D2AE4479100855F45 /* AppThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemes.swift; sourceTree = "<group>"; };
+		0A51A53E2AEA37480023C253 /* DriverDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailsViewController.swift; sourceTree = "<group>"; };
+		0A51A53F2AEA37480023C253 /* DriverDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverDetailsViewController.xib; sourceTree = "<group>"; };
+		0A51A5432AEA58ED0023C253 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0A51A5442AEA58ED0023C253 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		0A51A5482AEA5FC20023C253 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		0A51A54A2AEA6A120023C253 /* AppButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppButton.xib; sourceTree = "<group>"; };
 		0A54DA392ADFAB6800F15E17 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0A556A652AE9152C0053A5BA /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		0A556A682AE95EE40053A5BA /* RideDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideDetailsViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +222,7 @@
 		0A1D43E22AE7B2A200D9D545 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0A51A53D2AEA35FC0023C253 /* DriverDetails */,
 				0A556A672AE95EAA0053A5BA /* RideDetails */,
 				0A1D43ED2AE7BC3700D9D545 /* PlaceSearch */,
 				0A1D43E72AE7B85200D9D545 /* Views */,
@@ -253,6 +266,33 @@
 				0A1D43F52AE7BE0D00D9D545 /* SearchFieldView.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0A51A53D2AEA35FC0023C253 /* DriverDetails */ = {
+			isa = PBXGroup;
+			children = (
+				0A51A53E2AEA37480023C253 /* DriverDetailsViewController.swift */,
+				0A51A53F2AEA37480023C253 /* DriverDetailsViewController.xib */,
+			);
+			path = DriverDetails;
+			sourceTree = "<group>";
+		};
+		0A51A5422AEA58D50023C253 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0A51A5432AEA58ED0023C253 /* ProfileViewController.swift */,
+				0A51A5442AEA58ED0023C253 /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		0A51A5472AEA5FA70023C253 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				0A51A5482AEA5FC20023C253 /* AppButton.swift */,
+				0A51A54A2AEA6A120023C253 /* AppButton.xib */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		0A556A672AE95EAA0053A5BA /* RideDetails */ = {
@@ -393,6 +433,7 @@
 		0ABF348B2AE28D9100CE6D0F /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				0A51A5422AEA58D50023C253 /* Profile */,
 				0A1D43E22AE7B2A200D9D545 /* Home */,
 				0A1D43D62AE796DA00D9D545 /* MainTabBarController */,
 				0A8042182AE6C1B700EFF450 /* Varification */,
@@ -458,6 +499,7 @@
 		0ABF34B02AE2D19600CE6D0F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				0A51A5472AEA5FA70023C253 /* Button */,
 				0AD3BF5A2AE98975002AB3B3 /* IconButton */,
 				0A556A712AE9643E0053A5BA /* PlaceDetailsView */,
 				0A556A6C2AE960100053A5BA /* PlaceCircleView */,
@@ -585,10 +627,12 @@
 				0A1D43E12AE7A1EB00D9D545 /* MainTabBarView.xib in Resources */,
 				0A556A702AE961020053A5BA /* PlaceCircleView.xib in Resources */,
 				0A556A752AE964A30053A5BA /* PlaceDetailsView.xib in Resources */,
+				0A51A5412AEA37480023C253 /* DriverDetailsViewController.xib in Resources */,
 				0AA8B8E92AE69529000FEBF8 /* PrimaryButton.xib in Resources */,
 				0A1D43E62AE7B2BE00D9D545 /* HomeViewController.xib in Resources */,
 				0ABF349D2AE2A20400CE6D0F /* Montserrat-Bold.ttf in Resources */,
 				0A06F5D22ADD41BB006BCB4F /* LaunchScreen.storyboard in Resources */,
+				0A51A54B2AEA6A120023C253 /* AppButton.xib in Resources */,
 				0A1D43F12AE7BC4E00D9D545 /* PlaceSearchViewController.xib in Resources */,
 				0A1D43F62AE7BE0D00D9D545 /* SearchFieldView.xib in Resources */,
 				0AD3BF5E2AE989F5002AB3B3 /* IconButton.xib in Resources */,
@@ -596,6 +640,7 @@
 				0A8042282AE6CB6200EFF450 /* OtpView.xib in Resources */,
 				0ABF34AD2AE2CF0C00CE6D0F /* PersonalDataViewController.xib in Resources */,
 				0A556A6B2AE95EE40053A5BA /* RideDetailsViewController.xib in Resources */,
+				0A51A5462AEA58ED0023C253 /* ProfileViewController.xib in Resources */,
 				0ABF34A02AE2A20400CE6D0F /* Montserrat-SemiBold.ttf in Resources */,
 				0AEDE85B2AE3A96C001CCFEB /* InputFieldView.xib in Resources */,
 				0ABF34A12AE2A20400CE6D0F /* Montserrat-Light.ttf in Resources */,
@@ -620,11 +665,13 @@
 				0ABF34832AE2720C00CE6D0F /* Theme.swift in Sources */,
 				0AEDE8572AE3A668001CCFEB /* NSAttributedString+Extensions.swift in Sources */,
 				0AD3BF5C2AE989B0002AB3B3 /* IconButton.swift in Sources */,
+				0A51A5402AEA37480023C253 /* DriverDetailsViewController.swift in Sources */,
 				0ABF348A2AE2828C00CE6D0F /* Cache.swift in Sources */,
 				0ABF34AC2AE2CF0C00CE6D0F /* PersonalDataViewController.swift in Sources */,
 				0A79A4572AE2FDFF006059A9 /* Contants.swift in Sources */,
 				0A1D43E52AE7B2BE00D9D545 /* HomeViewController.swift in Sources */,
 				0A8042262AE6CB6200EFF450 /* OtpView.swift in Sources */,
+				0A51A5492AEA5FC20023C253 /* AppButton.swift in Sources */,
 				0A38713E2AE4479100855F45 /* AppThemes.swift in Sources */,
 				0ABF34932AE2993E00CE6D0F /* Font.swift in Sources */,
 				0A06F5C62ADD41BA006BCB4F /* AppDelegate.swift in Sources */,
@@ -638,6 +685,7 @@
 				0ABF34A72AE2A95400CE6D0F /* UIViewController+Extensions.swift in Sources */,
 				0A556A6E2AE960440053A5BA /* PlaceCircleView.swift in Sources */,
 				0AEDE8512AE3A28F001CCFEB /* InputFieldView.swift in Sources */,
+				0A51A5452AEA58ED0023C253 /* ProfileViewController.swift in Sources */,
 				0A8042292AE6CB6200EFF450 /* OtpViewDecorator.swift in Sources */,
 				0AEDE8532AE3A5A3001CCFEB /* UITextField+Extensions.swift in Sources */,
 				0AA8B8E62AE694AC000FEBF8 /* PrimaryButton.swift in Sources */,

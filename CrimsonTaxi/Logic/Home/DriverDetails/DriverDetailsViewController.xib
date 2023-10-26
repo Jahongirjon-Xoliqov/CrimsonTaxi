@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DriverDetailsViewController" customModule="CrimsonTaxi" customModuleProvider="target">
+            <connections>
+                <outlet property="callButton" destination="eRI-FJ-3Fg" id="OjG-Mz-eOV"/>
+                <outlet property="cancelButton" destination="3jJ-FF-C6J" id="LhU-y2-LeV"/>
+                <outlet property="carColorLabel" destination="aQX-bN-Tqp" id="jEa-sz-lsh"/>
+                <outlet property="carModelLabel" destination="rw5-ox-6v2" id="KTo-Kj-Rb5"/>
+                <outlet property="carNumberLabel" destination="ool-vg-gLV" id="5f4-Ba-Y8c"/>
+                <outlet property="dragView" destination="jmx-Vj-pcx" id="OdS-29-Un1"/>
+                <outlet property="driverDetailsLabel" destination="a25-uz-BXG" id="JYl-ow-5y2"/>
+                <outlet property="driverImagePlaceholderView" destination="MIN-j4-frd" id="F26-mW-k2I"/>
+                <outlet property="driverImageView" destination="2i3-nk-Zby" id="SXb-p7-WA2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmx-Vj-pcx">
+                    <rect key="frame" x="156.66666666666666" y="20" width="80" height="6"/>
+                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="QJA-Og-quC"/>
+                        <constraint firstAttribute="height" constant="6" id="sZt-BF-gtI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIN-j4-frd" customClass="PlaceCircleView" customModule="CrimsonTaxi" customModuleProvider="target">
+                    <rect key="frame" x="30" y="40.333333333333343" width="60" height="60"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2i3-nk-Zby">
+                            <rect key="frame" x="5" y="5" width="50" height="50"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2i3-nk-Zby" secondAttribute="trailing" constant="5" id="Bue-oL-Kfx"/>
+                        <constraint firstAttribute="bottom" secondItem="2i3-nk-Zby" secondAttribute="bottom" constant="5" id="COR-Pj-Glz"/>
+                        <constraint firstItem="2i3-nk-Zby" firstAttribute="top" secondItem="MIN-j4-frd" secondAttribute="top" constant="5" id="Oby-Di-YJo"/>
+                        <constraint firstItem="2i3-nk-Zby" firstAttribute="leading" secondItem="MIN-j4-frd" secondAttribute="leading" constant="5" id="WL9-1j-xrm"/>
+                        <constraint firstAttribute="width" constant="60" id="qRN-ok-inE"/>
+                        <constraint firstAttribute="height" constant="60" id="xTR-s2-1Zo"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a25-uz-BXG">
+                    <rect key="frame" x="120" y="60.000000000000007" width="243" height="20.333333333333336"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Vi2-Ib-rex">
+                    <rect key="frame" x="131.66666666666666" y="231.33333333333337" width="129.99999999999997" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3jJ-FF-C6J" customClass="IconButton" customModule="CrimsonTaxi" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Y8S-e3-s3o"/>
+                                <constraint firstAttribute="height" constant="50" id="jfP-9S-6g3"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRI-FJ-3Fg" customClass="IconButton" customModule="CrimsonTaxi" customModuleProvider="target">
+                            <rect key="frame" x="80" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="srn-u9-AX2">
+                    <rect key="frame" x="120" y="110.33333333333331" width="243" height="81"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rw5-ox-6v2">
+                            <rect key="frame" x="0.0" y="0.0" width="243" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQX-bN-Tqp">
+                            <rect key="frame" x="0.0" y="30.333333333333329" width="243" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ool-vg-gLV">
+                            <rect key="frame" x="0.0" y="60.666666666666679" width="243" height="20.333333333333336"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="srn-u9-AX2" firstAttribute="leading" secondItem="a25-uz-BXG" secondAttribute="leading" id="Bg1-fT-1Ic"/>
+                <constraint firstItem="a25-uz-BXG" firstAttribute="leading" secondItem="MIN-j4-frd" secondAttribute="trailing" constant="30" id="GYI-0T-uWq"/>
+                <constraint firstItem="Vi2-Ib-rex" firstAttribute="top" secondItem="srn-u9-AX2" secondAttribute="bottom" constant="40" id="HSP-0M-Cfp"/>
+                <constraint firstItem="jmx-Vj-pcx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Hih-FZ-ZvW"/>
+                <constraint firstItem="Vi2-Ib-rex" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TLW-cy-AB0"/>
+                <constraint firstItem="a25-uz-BXG" firstAttribute="top" secondItem="jmx-Vj-pcx" secondAttribute="top" constant="40" id="Ulb-eM-msX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a25-uz-BXG" secondAttribute="trailing" constant="30" id="ghf-si-Bek"/>
+                <constraint firstItem="srn-u9-AX2" firstAttribute="top" secondItem="a25-uz-BXG" secondAttribute="bottom" constant="30" id="hHA-Eb-XIU"/>
+                <constraint firstItem="MIN-j4-frd" firstAttribute="centerY" secondItem="a25-uz-BXG" secondAttribute="centerY" id="hhk-ue-d5L"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="srn-u9-AX2" secondAttribute="trailing" constant="30" id="kwc-CM-W6Z"/>
+                <constraint firstItem="MIN-j4-frd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="wAr-Q3-C9J"/>
+                <constraint firstItem="jmx-Vj-pcx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zpC-a0-DAn"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

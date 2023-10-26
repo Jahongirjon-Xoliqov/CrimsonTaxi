@@ -55,6 +55,16 @@ class RideDetailsViewController: BaseViewController {
         sourceEditButton.set(image: UIImage(named: "edit"))
         destinationEditButton.set(image: UIImage(named: "edit"))
         
+        sourceEditButton.tapAction = { [weak self] in
+            guard let self else { return }
+            print("source location change tapped")
+        }
+        
+        destinationEditButton.tapAction = { [weak self] in
+            guard let self else { return }
+            print("destination location change tapped")
+        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

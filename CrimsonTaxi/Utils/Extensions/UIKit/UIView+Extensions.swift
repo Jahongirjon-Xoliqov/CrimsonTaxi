@@ -41,6 +41,15 @@ extension UIView {
                           opacity: 0.3)
     }
     
+    
+    func applyShadow(_ type: AppShadow) {
+        let opacity: Float = Float(type.opacity)
+        layer.applyShadow(color: type.color,
+                          offset: type.offset,
+                          radius: type.radius,
+                          opacity: opacity)
+    }
+    
     func applyShadow() {
         clipsToBounds = false
         layer.masksToBounds = false
