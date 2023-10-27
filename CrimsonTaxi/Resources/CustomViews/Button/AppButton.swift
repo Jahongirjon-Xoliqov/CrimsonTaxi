@@ -7,45 +7,6 @@
 
 import UIKit
 
-protocol AppShadow {
-    var path: CGPath? { get set }
-    var color: UIColor { get set }
-    var offset: CGSize { get set }
-    var radius: CGFloat { get set }
-    var opacity: CGFloat { get set }
-}
-
-struct PrimaryShadow: AppShadow {
-    var path: CGPath?
-    var radius: CGFloat = 16
-    var opacity: CGFloat = 0.3
-    var color: UIColor = Theme.current.appBlack
-    var offset: CGSize = CGSize(width: 0, height: 5)
-}
-
-struct SecondaryShadow: AppShadow {
-    var path: CGPath?
-    var radius: CGFloat = 10
-    var opacity: CGFloat = 0.4
-    var color: UIColor = Theme.current.appBlack
-    var offset: CGSize = CGSize(width: 0, height: 4)
-}
-
-enum AppButtonAlignment {
-    case leading
-    case center
-    case trailing
-    case reversedLeading
-    case reversedCenter
-    case reversedTrailing
-}
-
-struct AppButtonConfiguration {
-    var title: AttributedTitle?
-    var image: AttributedImage?
-    var background: AttributedView?
-}
-
 struct AttributedImage {
     var image: UIImage?
     var tintColor: UIColor?
@@ -69,6 +30,11 @@ struct AttributedView {
     var cornerRadius: CGFloat?
 }
 
+struct AppButtonConfiguration {
+    var title: AttributedTitle?
+    var image: AttributedImage?
+    var background: AttributedView?
+}
 
 class AppButton: UIControl {
     
@@ -186,36 +152,17 @@ class AppButton: UIControl {
         }
     }
     
-    func makePrimary() {
-        
-        let shadow = PrimaryShadow(color: Theme.current.primary)
-        
-        let background = AttributedView(color: Theme.current.primary, 
-                                        shadow: shadow,
-                                        cornerRadius: 0.25)
-        
-        let titleAttrs = Attr.create(text: "Next",
-                                     color: Theme.current.appWhite,
-                                     font: .semibold,
-                                     size: 17)
-        
-        let title = AttributedTitle(attributes: titleAttrs)
-        
-        let configurations = AppButtonConfiguration(title: title, background: background)
-        
-        self.configuration = configurations
-        
+}
+
+extension AppButton: ThemeModifiable {
+    
+    func configureColor() {
         self.configure()
-        
-        imageView.isHidden = true
-        
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        
     }
+    
+}
+
+extension AppButton {
     
     func profileOption(title: String, image: UIImage?) {
         
@@ -235,7 +182,7 @@ class AppButton: UIControl {
         
         let title = AttributedTitle(attributes: titleAttrs)
         
-        let configurations = AppButtonConfiguration(title: title, 
+        let configurations = AppButtonConfiguration(title: title,
                                                     image: imageAttr,
                                                     background: background)
         
@@ -257,21 +204,22 @@ class AppButton: UIControl {
         
     }
     
-    func activeButton(title: String, image: UIImage?) {
+    func actionButton(title: String, image: UIImage?, color: UIColor?) {
         
-        let titleAttrs = Attr.create(text: title, color: Theme.current.error,
+        let titleAttrs = Attr.create(text: title, 
+                                     color: color ?? Theme.current.text,
                                      font: .regular,
                                      size: 14,
                                      align: .left)
         
         let title = AttributedTitle(attributes: titleAttrs)
         
-        let image = AttributedImage(image: image, 
-                                    tintColor: Theme.current.error,
+        let image = AttributedImage(image: image,
+                                    tintColor: color,
                                     contentType: .scaleToFill)
         
         let background = AttributedView(borderWidth: 1,
-                                        borderColor: Theme.current.error,
+                                        borderColor: color,
                                         cornerRadius: 0.25)
         
         configuration = AppButtonConfiguration(title: title,
@@ -294,10 +242,4 @@ class AppButton: UIControl {
         
     }
     
-}
-
-extension AppButton: ThemeModifiable {
-    func configureColor() {
-        self.configure()
-    }
 }

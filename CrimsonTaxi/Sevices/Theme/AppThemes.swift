@@ -20,6 +20,7 @@ protocol Themeable: AnyObject {
     var appBlack: UIColor { get }
     var supportingShade: UIColor { get }
     var separator: UIColor { get }
+    var appGreen: UIColor { get }
 }
 
 final class LightTheme: Themeable {
@@ -35,6 +36,7 @@ final class LightTheme: Themeable {
     var appBlack: UIColor = UIColor(red: 19, green: 20, blue: 24)
     var supportingShade: UIColor = UIColor(red: 223, green: 223, blue: 223)
     var separator: UIColor = UIColor(red: 197, green: 197, blue: 197)
+    var appGreen: UIColor = UIColor(red: 20, green: 159, blue: 84)
 }
 
 final class DarkTheme: Themeable {
@@ -50,6 +52,7 @@ final class DarkTheme: Themeable {
     var appBlack: UIColor = UIColor(red: 19, green: 20, blue: 24)
     var supportingShade: UIColor = UIColor(red: 223, green: 223, blue: 223)
     var separator: UIColor = UIColor(red: 64, green: 64, blue: 64)
+    var appGreen: UIColor = UIColor(red: 20, green: 159, blue: 84)
 }
 
 final class CrimsonTheme: Themeable {
@@ -65,4 +68,5 @@ final class CrimsonTheme: Themeable {
     var appBlack: UIColor = UIColor(rgb: 0xFF0000)
     var supportingShade: UIColor = UIColor(rgb: 0xFF0000)
     var separator: UIColor = UIColor(rgb: 0xFF0000)
+    var appGreen: UIColor = UIColor(rgb: 0xFF0000)
 }

@@ -21,6 +21,10 @@ class VerificationViewController: BaseViewController {
         verifyButton.set(title: "Verify")
         verifyButton.tapAction = { [weak self] in
             guard let self else { return }
+            let vc = MainTabBarController()
+            let root = BaseNavigationController(rootViewController: vc)
+            root.modalPresentationStyle = .fullScreen
+            self.navController?.present(root, animated: true)
         }
         otpView.decorator = OtpViewDecorator.defaultDecorator
         otpView.delegate = self

@@ -23,6 +23,9 @@ class DriverDetailsViewController: BaseViewController {
     
     private var touchPoint: CGPoint?
     var FINAL_POINT: CGFloat = SCREEN_SIZE.height - safeAreaBottomHeight - 400
+    var HIDE_POINT: CGFloat = SCREEN_SIZE.height
+    
+    var cancelAction: CommonAction?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,13 +77,17 @@ class DriverDetailsViewController: BaseViewController {
                  size: 15,
                  align: .left)
         
-        callButton.activeButton(title: "Qo'ng'iroq\nqilish",
-                                image: UIImage(named: "phone"))
-        cancelButton.activeButton(title: "Bekor qilish",
-                                  image: UIImage(named: "cancelLarge"))
+        callButton.actionButton(title: "Qo'ng'iroq\nqilish",
+                                image: UIImage(named: "phone"),
+                                color: Theme.current.appGreen)
+        
+        cancelButton.actionButton(title: "Bekor qilish",
+                                  image: UIImage(named: "cancelLarge"),
+                                  color: Theme.current.error)
         
         cancelButton.touchEnded = { [weak self] in
             guard let self else { return }
+            self.cancelAction?()
         }
         
         callButton.touchEnded = { [weak self] in

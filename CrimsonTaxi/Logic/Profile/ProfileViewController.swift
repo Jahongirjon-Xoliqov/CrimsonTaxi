@@ -93,11 +93,13 @@ class ProfileViewController: BaseViewController {
     }
     
     @objc private func themeButtonTapped() {
-        print("theme")
+        let vc = ThemeConfViewController()
+        navController?.pushViewController(vc, animated: true)
     }
     
     @objc private func languageButtonTapped() {
-        print("language")
+        let vc = LanguageConfViewController()
+        navController?.pushViewController(vc, animated: true)
     }
     
 }

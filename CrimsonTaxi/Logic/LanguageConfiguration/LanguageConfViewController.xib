@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LanguageConfViewController" customModule="CrimsonTaxi" customModuleProvider="target">
+            <connections>
+                <outlet property="navTitleView" destination="9wo-lD-Pl8" id="gWe-8q-IC8"/>
+                <outlet property="ruButton" destination="DUs-wp-AN5" id="gFo-Ta-6cY"/>
+                <outlet property="uzButton" destination="q6a-cW-5Di" id="RrU-ml-Abb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Zsp-4z-suJ">
+                    <rect key="frame" x="30" y="358.66666666666669" width="333" height="135"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6a-cW-5Di" customClass="PrimaryButton" customModule="CrimsonTaxi" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="333" height="60"/>
+                            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="UPf-xl-zVt"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUs-wp-AN5" customClass="PrimaryButton" customModule="CrimsonTaxi" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="75" width="333" height="60"/>
+                            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wo-lD-Pl8" customClass="NavTitleView" customModule="CrimsonTaxi" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="79" width="393" height="54"/>
+                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="86k-Ba-VKR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9wo-lD-Pl8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="6Pe-FJ-0iq"/>
+                <constraint firstItem="Zsp-4z-suJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="E5f-8A-UOW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zsp-4z-suJ" secondAttribute="trailing" constant="30" id="O1p-zr-WhW"/>
+                <constraint firstItem="9wo-lD-Pl8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RS7-xL-PvX"/>
+                <constraint firstItem="Zsp-4z-suJ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="VmT-aP-9iW"/>
+                <constraint firstAttribute="trailing" secondItem="9wo-lD-Pl8" secondAttribute="trailing" id="oo8-oP-v2V"/>
+                <constraint firstItem="Zsp-4z-suJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qvZ-35-ndm"/>
+            </constraints>
+            <point key="canvasLocation" x="47" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

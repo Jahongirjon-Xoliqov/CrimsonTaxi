@@ -21,6 +21,11 @@
 		0A1D43F12AE7BC4E00D9D545 /* PlaceSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1D43EF2AE7BC4E00D9D545 /* PlaceSearchViewController.xib */; };
 		0A1D43F42AE7BDDE00D9D545 /* SearchFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D43F32AE7BDDE00D9D545 /* SearchFieldView.swift */; };
 		0A1D43F62AE7BE0D00D9D545 /* SearchFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1D43F52AE7BE0D00D9D545 /* SearchFieldView.xib */; };
+		0A3542C82AEBCB8100FBC282 /* ThemeConfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3542C62AEBCB8100FBC282 /* ThemeConfViewController.swift */; };
+		0A3542C92AEBCB8100FBC282 /* ThemeConfViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3542C72AEBCB8100FBC282 /* ThemeConfViewController.xib */; };
+		0A3542CD2AEBD99600FBC282 /* LanguageConfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3542CB2AEBD99600FBC282 /* LanguageConfViewController.swift */; };
+		0A3542CE2AEBD99600FBC282 /* LanguageConfViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3542CC2AEBD99600FBC282 /* LanguageConfViewController.xib */; };
+		0A3542D12AEC059B00FBC282 /* AppShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3542D02AEC059B00FBC282 /* AppShadow.swift */; };
 		0A38713E2AE4479100855F45 /* AppThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38713D2AE4479100855F45 /* AppThemes.swift */; };
 		0A51A5402AEA37480023C253 /* DriverDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A51A53E2AEA37480023C253 /* DriverDetailsViewController.swift */; };
 		0A51A5412AEA37480023C253 /* DriverDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A51A53F2AEA37480023C253 /* DriverDetailsViewController.xib */; };
@@ -98,6 +103,11 @@
 		0A1D43EF2AE7BC4E00D9D545 /* PlaceSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceSearchViewController.xib; sourceTree = "<group>"; };
 		0A1D43F32AE7BDDE00D9D545 /* SearchFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldView.swift; sourceTree = "<group>"; };
 		0A1D43F52AE7BE0D00D9D545 /* SearchFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFieldView.xib; sourceTree = "<group>"; };
+		0A3542C62AEBCB8100FBC282 /* ThemeConfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeConfViewController.swift; sourceTree = "<group>"; };
+		0A3542C72AEBCB8100FBC282 /* ThemeConfViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemeConfViewController.xib; sourceTree = "<group>"; };
+		0A3542CB2AEBD99600FBC282 /* LanguageConfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageConfViewController.swift; sourceTree = "<group>"; };
+		0A3542CC2AEBD99600FBC282 /* LanguageConfViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageConfViewController.xib; sourceTree = "<group>"; };
+		0A3542D02AEC059B00FBC282 /* AppShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShadow.swift; sourceTree = "<group>"; };
 		0A38713D2AE4479100855F45 /* AppThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemes.swift; sourceTree = "<group>"; };
 		0A51A53E2AEA37480023C253 /* DriverDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailsViewController.swift; sourceTree = "<group>"; };
 		0A51A53F2AEA37480023C253 /* DriverDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverDetailsViewController.xib; sourceTree = "<group>"; };
@@ -268,6 +278,32 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0A3542C52AEBCB4F00FBC282 /* ThemeConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				0A3542C62AEBCB8100FBC282 /* ThemeConfViewController.swift */,
+				0A3542C72AEBCB8100FBC282 /* ThemeConfViewController.xib */,
+			);
+			path = ThemeConfiguration;
+			sourceTree = "<group>";
+		};
+		0A3542CA2AEBD97B00FBC282 /* LanguageConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				0A3542CB2AEBD99600FBC282 /* LanguageConfViewController.swift */,
+				0A3542CC2AEBD99600FBC282 /* LanguageConfViewController.xib */,
+			);
+			path = LanguageConfiguration;
+			sourceTree = "<group>";
+		};
+		0A3542CF2AEC058D00FBC282 /* Shadow */ = {
+			isa = PBXGroup;
+			children = (
+				0A3542D02AEC059B00FBC282 /* AppShadow.swift */,
+			);
+			path = Shadow;
+			sourceTree = "<group>";
+		};
 		0A51A53D2AEA35FC0023C253 /* DriverDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +442,7 @@
 		0ABF34842AE276F600CE6D0F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0A3542CF2AEC058D00FBC282 /* Shadow */,
 				0ABF34882AE2827500CE6D0F /* Cashe */,
 				0ABF34852AE2770000CE6D0F /* Extensions */,
 				0A79A4562AE2FDFF006059A9 /* Contants.swift */,
@@ -433,6 +470,8 @@
 		0ABF348B2AE28D9100CE6D0F /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				0A3542CA2AEBD97B00FBC282 /* LanguageConfiguration */,
+				0A3542C52AEBCB4F00FBC282 /* ThemeConfiguration */,
 				0A51A5422AEA58D50023C253 /* Profile */,
 				0A1D43E22AE7B2A200D9D545 /* Home */,
 				0A1D43D62AE796DA00D9D545 /* MainTabBarController */,
@@ -625,8 +664,10 @@
 				0ABF349E2AE2A20400CE6D0F /* Montserrat-ExtraBold.ttf in Resources */,
 				0A8042172AE6B3E300EFF450 /* SelectableView.xib in Resources */,
 				0A1D43E12AE7A1EB00D9D545 /* MainTabBarView.xib in Resources */,
+				0A3542C92AEBCB8100FBC282 /* ThemeConfViewController.xib in Resources */,
 				0A556A702AE961020053A5BA /* PlaceCircleView.xib in Resources */,
 				0A556A752AE964A30053A5BA /* PlaceDetailsView.xib in Resources */,
+				0A3542CE2AEBD99600FBC282 /* LanguageConfViewController.xib in Resources */,
 				0A51A5412AEA37480023C253 /* DriverDetailsViewController.xib in Resources */,
 				0AA8B8E92AE69529000FEBF8 /* PrimaryButton.xib in Resources */,
 				0A1D43E62AE7B2BE00D9D545 /* HomeViewController.xib in Resources */,
@@ -675,6 +716,7 @@
 				0A38713E2AE4479100855F45 /* AppThemes.swift in Sources */,
 				0ABF34932AE2993E00CE6D0F /* Font.swift in Sources */,
 				0A06F5C62ADD41BA006BCB4F /* AppDelegate.swift in Sources */,
+				0A3542D12AEC059B00FBC282 /* AppShadow.swift in Sources */,
 				0A1D43EA2AE7B88500D9D545 /* MapView.swift in Sources */,
 				0A8042152AE6B39200EFF450 /* SelectableView.swift in Sources */,
 				0A1D43DB2AE7998000D9D545 /* MainTabBarController.swift in Sources */,
@@ -684,10 +726,12 @@
 				0A556A6A2AE95EE40053A5BA /* RideDetailsViewController.swift in Sources */,
 				0ABF34A72AE2A95400CE6D0F /* UIViewController+Extensions.swift in Sources */,
 				0A556A6E2AE960440053A5BA /* PlaceCircleView.swift in Sources */,
+				0A3542CD2AEBD99600FBC282 /* LanguageConfViewController.swift in Sources */,
 				0AEDE8512AE3A28F001CCFEB /* InputFieldView.swift in Sources */,
 				0A51A5452AEA58ED0023C253 /* ProfileViewController.swift in Sources */,
 				0A8042292AE6CB6200EFF450 /* OtpViewDecorator.swift in Sources */,
 				0AEDE8532AE3A5A3001CCFEB /* UITextField+Extensions.swift in Sources */,
+				0A3542C82AEBCB8100FBC282 /* ThemeConfViewController.swift in Sources */,
 				0AA8B8E62AE694AC000FEBF8 /* PrimaryButton.swift in Sources */,
 				0A1D43F02AE7BC4E00D9D545 /* PlaceSearchViewController.swift in Sources */,
 				0A54DA3A2ADFAB6800F15E17 /* BaseViewController.swift in Sources */,

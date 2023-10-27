@@ -22,6 +22,7 @@ class NavBackButton: BaseUIView {
     
     private func configure() {
         applyShadow()
+        configureColor()
         clearBackground()
         imageView.image = UIImage(named: "navBack")
     }

@@ -35,10 +35,7 @@ extension UIView {
     func primaryButtonShadow() {
         clipsToBounds = false
         layer.masksToBounds = false
-        layer.applyShadow(color: Theme.current.primary,
-                          offset: CGSize(width: 0, height: 10),
-                          radius: 10,
-                          opacity: 0.3)
+        applyShadow(primaryShadow)
     }
     
     

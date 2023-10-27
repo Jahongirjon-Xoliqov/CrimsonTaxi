@@ -26,4 +26,8 @@ var window: UIWindow? {
     UIApplication.shared.windows.first
 }
 
+let primaryShadow: AppShadow = CommonShadow(radius: 10,
+                                            opacity: 0.3,
+                                            color: Theme.current.primary,
+                                            offset: CGSize(width: 0, height: 10))
 

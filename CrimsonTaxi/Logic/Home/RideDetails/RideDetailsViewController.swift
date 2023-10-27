@@ -23,6 +23,9 @@ class RideDetailsViewController: BaseViewController {
     
     private var touchPoint: CGPoint?
     var FINAL_POINT: CGFloat = SCREEN_SIZE.height - safeAreaBottomHeight - 500
+    var HIDE_POINT: CGFloat = SCREEN_SIZE.height
+    
+    var orderAction: CommonAction?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +54,10 @@ class RideDetailsViewController: BaseViewController {
         destinationPlaceView.set(place: "Starbucks", details: "453 William Trail Apt. 896\nLesterstad")
         
         orderButton.set(title: "6 000 som ga taksi chaqirish")
+        orderButton.tapAction = { [weak self] in
+            guard let self else { return }
+            self.orderAction?()
+        }
         
         sourceEditButton.set(image: UIImage(named: "edit"))
         destinationEditButton.set(image: UIImage(named: "edit"))
