@@ -9,6 +9,7 @@ import UIKit
 
 class ProfileViewController: BaseViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var profileImagePlaceholder: IconButton!
     @IBOutlet weak var nameFieldView: InputFieldView!
@@ -16,12 +17,18 @@ class ProfileViewController: BaseViewController {
     @IBOutlet weak var maleButton: SelectableView!
     @IBOutlet weak var femaleButton: SelectableView!
     @IBOutlet weak var saveButton: PrimaryButton!
-    
     @IBOutlet weak var languageButton: AppButton!
+    @IBOutlet weak var themeButton: AppButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureAppearance()
+        
+        scrollView.contentInset = UIEdgeInsets(top: 30,
+                                               left: 0,
+                                               bottom: 100,
+                                               right: 0)
+        
         profileImageView.image = UIImage(named: "")
         profileImagePlaceholder.set(image: UIImage(named: "profileFill"))
         profileImagePlaceholder.tapAction = { [weak self] in
@@ -51,7 +58,7 @@ class ProfileViewController: BaseViewController {
         }
         
         femaleButton.set(title: "Female")
-        femaleButton.set(image: UIImage(named: "profile"))
+        femaleButton.set(image: UIImage(named: "female"))
         femaleButton.becomeActiveAction = { [weak self] in
             guard let self else { return }
             self.femaleButton.set(state: .seleted)
@@ -59,22 +66,12 @@ class ProfileViewController: BaseViewController {
             Theme.settings.updateTheme(LightTheme())
         }
         
-        languageButton.makePrimary()
-        languageButton.touchBegan = { [weak self] in
-            guard let self else { return }
-            languageButton.alpha = 0.5
-            languageButton.clearShadow()
-        }
-        languageButton.touchEnded = { [weak self] in
-            guard let self else { return }
-            languageButton.alpha = 1
-            languageButton.shadowIdentity()
-        }
-        languageButton.touchCancelled = { [weak self] in
-            guard let self else { return }
-            languageButton.alpha = 1
-            languageButton.shadowIdentity()
-        }
+        themeButton.addTarget(self, 
+                              action: #selector(themeButtonTapped),
+                              for: .touchUpInside)
+        languageButton.addTarget(self, 
+                                 action: #selector(languageButtonTapped),
+                                 for: .touchUpInside)
         
     }
     
@@ -89,6 +86,18 @@ class ProfileViewController: BaseViewController {
         view.backgroundColor = Theme.current.background
         profileImagePlaceholder.iconTintColor = Theme.current.supporting
         profileImagePlaceholder.selfBackgroundColor = Theme.current.supportingShade
+        themeButton.profileOption(title: "Theme",
+                                     image: UIImage(named: "theme"))
+        languageButton.profileOption(title: "Language",
+                                     image: UIImage(named: "language"))
+    }
+    
+    @objc private func themeButtonTapped() {
+        print("theme")
+    }
+    
+    @objc private func languageButtonTapped() {
+        print("language")
     }
     
 }

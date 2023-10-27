@@ -18,11 +18,11 @@ class DriverDetailsViewController: BaseViewController {
     @IBOutlet weak var carColorLabel: UILabel!
     @IBOutlet weak var carNumberLabel: UILabel!
     
-    @IBOutlet weak var callButton: IconButton!
-    @IBOutlet weak var cancelButton: IconButton!
+    @IBOutlet weak var callButton: AppButton!
+    @IBOutlet weak var cancelButton: AppButton!
     
     private var touchPoint: CGPoint?
-    var FINAL_POINT: CGFloat = SCREEN_SIZE.height - safeAreaBottomHeight - 380
+    var FINAL_POINT: CGFloat = SCREEN_SIZE.height - safeAreaBottomHeight - 400
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,6 @@ class DriverDetailsViewController: BaseViewController {
         
         dragView.clipsToBounds = true
         dragView.clip(radius: 3)
-        
         
         
         driverImageView.image = UIImage(named: "")
@@ -75,21 +74,17 @@ class DriverDetailsViewController: BaseViewController {
                  size: 15,
                  align: .left)
         
-        callButton.isCircle = true
-        cancelButton.isCircle = true
-        callButton.set(image: UIImage(named: "phone"))
-        cancelButton.set(image: UIImage(named: "cancelLarge"))
-        callButton.selfBackgroundColor = Theme.current.primary
-        cancelButton.selfBackgroundColor = Theme.current.primary
+        callButton.activeButton(title: "Qo'ng'iroq\nqilish",
+                                image: UIImage(named: "phone"))
+        cancelButton.activeButton(title: "Bekor qilish",
+                                  image: UIImage(named: "cancelLarge"))
         
-        cancelButton.tapAction = { [weak self] in
+        cancelButton.touchEnded = { [weak self] in
             guard let self else { return }
-            print("source location change tapped")
         }
         
-        callButton.tapAction = { [weak self] in
+        callButton.touchEnded = { [weak self] in
             guard let self else { return }
-            print("destination location change tapped")
         }
         
     }
@@ -106,8 +101,6 @@ class DriverDetailsViewController: BaseViewController {
         view.applyShadow(opacity: 0.3)
         view.backgroundColor = Theme.current.background
         dragView.backgroundColor = Theme.current.supportingShade
-        cancelButton.iconTintColor = Theme.current.appBlack
-        callButton.iconTintColor = Theme.current.appBlack
     }
     
     func move(to point: CGFloat) {

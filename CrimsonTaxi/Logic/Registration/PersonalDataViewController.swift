@@ -43,7 +43,7 @@ class PersonalDataViewController: BaseViewController {
         }
         
         femaleButton.set(title: "Female")
-        femaleButton.set(image: UIImage(named: "profile"))
+        femaleButton.set(image: UIImage(named: "female"))
         femaleButton.becomeActiveAction = { [weak self] in
             guard let self else { return }
             self.femaleButton.set(state: .seleted)

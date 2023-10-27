@@ -77,7 +77,9 @@ class AppButton: UIControl {
     }()
     
     lazy var titleLabel: UILabel = {
-        return UILabel(frame: .zero)
+        let lbl = UILabel(frame: .zero)
+        lbl.numberOfLines = 0
+        return lbl
     }()
     
     var configuration = AppButtonConfiguration()
@@ -164,17 +166,13 @@ class AppButton: UIControl {
             }
         }
         
-        
-        
     }
     
     @objc private func touchUpInside() {
-        print("up inside")
         touchEnded?()
     }
     
     @objc private func touchDown() {
-        print("down")
         touchBegan?()
     }
     
@@ -217,7 +215,89 @@ class AppButton: UIControl {
         titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         
+    }
+    
+    func profileOption(title: String, image: UIImage?) {
+        
+        let background = AttributedView(borderWidth: 0.4,
+                                        borderColor: Theme.current.supporting,
+                                        cornerRadius: 0.25)
+        
+        let titleAttrs = Attr.create(text: title,
+                                     color: Theme.current.supporting,
+                                     font: .regular,
+                                     size: 14,
+                                     align: .left)
+        
+        let imageAttr = AttributedImage(image: image,
+                                        tintColor: Theme.current.supporting,
+                                        contentType: .scaleToFill)
+        
+        let title = AttributedTitle(attributes: titleAttrs)
+        
+        let configurations = AppButtonConfiguration(title: title, 
+                                                    image: imageAttr,
+                                                    background: background)
+        
+        self.configuration = configurations
+        
+        self.configure()
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.38).isActive = true
+        imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor, multiplier: 1).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        titleLabel.leadingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: 25).isActive = true
+        titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         
     }
     
+    func activeButton(title: String, image: UIImage?) {
+        
+        let titleAttrs = Attr.create(text: title, color: Theme.current.error,
+                                     font: .regular,
+                                     size: 14,
+                                     align: .left)
+        
+        let title = AttributedTitle(attributes: titleAttrs)
+        
+        let image = AttributedImage(image: image, 
+                                    tintColor: Theme.current.error,
+                                    contentType: .scaleToFill)
+        
+        let background = AttributedView(borderWidth: 1,
+                                        borderColor: Theme.current.error,
+                                        cornerRadius: 0.25)
+        
+        configuration = AppButtonConfiguration(title: title,
+                                               image: image,
+                                               background: background)
+        
+        self.configure()
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.38).isActive = true
+        imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor, multiplier: 1).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        titleLabel.leadingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: 10).isActive = true
+        titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        
+    }
+    
+}
+
+extension AppButton: ThemeModifiable {
+    func configureColor() {
+        self.configure()
+    }
 }
