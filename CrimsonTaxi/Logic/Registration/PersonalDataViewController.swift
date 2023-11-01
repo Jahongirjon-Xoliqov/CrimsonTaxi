@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PersonalDataViewController: BaseViewController {
+class PersonalDataViewController: BaseViewController, FlowController {
     
     @IBOutlet weak var largeTitleLabel: UILabel!
     @IBOutlet weak var nameFieldView: InputFieldView!
@@ -16,21 +16,27 @@ class PersonalDataViewController: BaseViewController {
     @IBOutlet weak var maleButton: SelectableView!
     @IBOutlet weak var femaleButton: SelectableView!
     
+    var didFillDataAction: CommonAction?
+    
+    var completionHandler: ((String) -> ())?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureAppearance()
         
+        nameFieldView.set(state: .common)
         nameFieldView.set(image: UIImage(named: "profile"))
         nameFieldView.set(placeholder: "Full Name")
         
+        phoneFieldView.set(state: .phoneNumber)
         phoneFieldView.set(image: UIImage(named: "phone"))
         phoneFieldView.set(placeholder: "Contact Number")
         
         nextButton.set(title: "Next")
         nextButton.tapAction = { [weak self] in
             guard let self else { return }
-            navController?.pushViewController(VerificationViewController(), animated: true)
+            self.completionHandler?("Yes")
         }
         
         maleButton.set(title: "Male")
@@ -39,7 +45,6 @@ class PersonalDataViewController: BaseViewController {
             guard let self else { return }
             self.maleButton.set(state: .seleted)
             self.femaleButton.set(state: .default)
-            Theme.settings.updateTheme(DarkTheme())
         }
         
         femaleButton.set(title: "Female")
@@ -48,7 +53,6 @@ class PersonalDataViewController: BaseViewController {
             guard let self else { return }
             self.femaleButton.set(state: .seleted)
             self.maleButton.set(state: .default)
-            Theme.settings.updateTheme(LightTheme())
         }
         
     }
@@ -69,3 +73,4 @@ class PersonalDataViewController: BaseViewController {
     }
     
 }
+

@@ -7,12 +7,16 @@
 
 import UIKit
 
-class VerificationViewController: BaseViewController {
+class VerificationViewController: BaseViewController, FlowController {
 
+    var completionHandler: ((Bool) -> ())?
+    
     @IBOutlet weak var navTitleView: NavTitleView!
     @IBOutlet weak var largeTitleLabel: UILabel!
     @IBOutlet weak var verifyButton: PrimaryButton!
     @IBOutlet weak var otpView: OtpView!
+    
+    var didVerifyAction: CommonAction?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +25,7 @@ class VerificationViewController: BaseViewController {
         verifyButton.set(title: "Verify")
         verifyButton.tapAction = { [weak self] in
             guard let self else { return }
-            let vc = MainTabBarController()
-            let root = BaseNavigationController(rootViewController: vc)
-            root.modalPresentationStyle = .fullScreen
-            self.navController?.present(root, animated: true)
+            self.completionHandler?(true)
         }
         otpView.decorator = OtpViewDecorator.defaultDecorator
         otpView.delegate = self
@@ -52,12 +53,16 @@ class VerificationViewController: BaseViewController {
                                                  size: 32,
                                                  align: .left)
     }
+
+    
     
 }
 
 extension VerificationViewController: OtpViewDelegate {
+    
     func shouldReceive(otpCode code: String, at otpView: OtpView) -> Bool {
         print(code)
         return true
     }
+
 }

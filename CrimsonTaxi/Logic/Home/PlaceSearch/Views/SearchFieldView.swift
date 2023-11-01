@@ -58,6 +58,7 @@ class SearchFieldView: BaseUIView {
 extension SearchFieldView: ThemeModifiable {
     func configureColor() {
         selfView.inactiveBorder()
+        textField.textColor = Theme.current.text
         imageView.tintColor = Theme.current.supporting
         textField.placeholder(with: placeholderText.nonNil)
         selfView.backgroundColor = Theme.current.background

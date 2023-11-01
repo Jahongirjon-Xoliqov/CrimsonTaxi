@@ -53,4 +53,13 @@ class MainTabBarView: BaseUIView {
         profileBecomeActive?()
     }
     
+    func modifyColors(_ selectedTabBarIndex: Int) {
+        selfView.backgroundColor = Theme.current.background
+        homeTabBarItemView.backgroundColor = Theme.current.background
+        profileTabBarItemView.backgroundColor = Theme.current.background
+        homeTabBarItemImageView.tintColor = selectedTabBarIndex == 0 ? Theme.current.primary : Theme.current.secondary
+        profileTabBarItemImageView.tintColor = selectedTabBarIndex == 1 ? Theme.current.primary : Theme.current.secondary
+    }
+    
 }
+

@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlaceSearchViewController" customModule="CrimsonTaxi" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="Cwa-ZE-zxW" id="nee-9D-K9C"/>
                 <outlet property="searchView" destination="bhI-LP-lDR" id="TeR-GD-CBn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,12 +28,26 @@
                         <constraint firstAttribute="height" constant="60" id="epa-II-LWy"/>
                     </constraints>
                 </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Cwa-ZE-zxW">
+                    <rect key="frame" x="0.0" y="130" width="393" height="722"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XtN-6B-2b3">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bhI-LP-lDR" secondAttribute="trailing" constant="30" id="1We-8p-pge"/>
                 <constraint firstItem="bhI-LP-lDR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="IhW-EN-aqb"/>
+                <constraint firstItem="Cwa-ZE-zxW" firstAttribute="top" secondItem="bhI-LP-lDR" secondAttribute="bottom" constant="30" id="JTr-GK-51L"/>
+                <constraint firstItem="Cwa-ZE-zxW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Lgs-3y-gRJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cwa-ZE-zxW" secondAttribute="trailing" id="bLD-Rt-6HU"/>
+                <constraint firstAttribute="bottom" secondItem="Cwa-ZE-zxW" secondAttribute="bottom" id="ctV-G4-0EV"/>
                 <constraint firstItem="bhI-LP-lDR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="sUc-Wq-0hi"/>
             </constraints>
             <point key="canvasLocation" x="132" y="-11"/>

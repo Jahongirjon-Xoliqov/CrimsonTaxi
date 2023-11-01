@@ -38,6 +38,38 @@ class DriverDetailsViewController: BaseViewController {
         driverImageView.image = UIImage(named: "")
         driverImagePlaceholderView.set(image: UIImage(named: "profile"))
         
+        callButton.actionButton(title: "Qo'ng'iroq\nqilish",
+                                image: UIImage(named: "phone"),
+                                color: Theme.current.appGreen)
+        
+        cancelButton.actionButton(title: "Bekor qilish",
+                                  image: UIImage(named: "cancelLarge"),
+                                  color: Theme.current.error)
+        
+        cancelButton.touchEnded = { [weak self] in
+            guard let self else { return }
+            self.cancelAction?()
+        }
+        
+        callButton.touchEnded = { [weak self] in
+            guard let self else { return }
+        }
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        driverImageView.clipsToBounds = true
+        driverImageView.clip(radius: driverImageView.frame.height/2)
+    }
+    
+    override func configureAppearance() {
+        super.configureAppearance()
+        view.clip(radius: 16)
+        view.applyShadow(opacity: 0.3)
+        view.backgroundColor = Theme.current.background
+        dragView.backgroundColor = Theme.current.supportingShade
+        
         driverDetailsLabel.attributedText = Attr.create(text: "Stephen Alexander",
                                                        color: Theme.current.text,
                                                        font: .semibold,
@@ -77,37 +109,7 @@ class DriverDetailsViewController: BaseViewController {
                  size: 15,
                  align: .left)
         
-        callButton.actionButton(title: "Qo'ng'iroq\nqilish",
-                                image: UIImage(named: "phone"),
-                                color: Theme.current.appGreen)
         
-        cancelButton.actionButton(title: "Bekor qilish",
-                                  image: UIImage(named: "cancelLarge"),
-                                  color: Theme.current.error)
-        
-        cancelButton.touchEnded = { [weak self] in
-            guard let self else { return }
-            self.cancelAction?()
-        }
-        
-        callButton.touchEnded = { [weak self] in
-            guard let self else { return }
-        }
-        
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        driverImageView.clipsToBounds = true
-        driverImageView.clip(radius: driverImageView.frame.height/2)
-    }
-    
-    override func configureAppearance() {
-        super.configureAppearance()
-        view.clip(radius: 16)
-        view.applyShadow(opacity: 0.3)
-        view.backgroundColor = Theme.current.background
-        dragView.backgroundColor = Theme.current.supportingShade
     }
     
     func move(to point: CGFloat) {

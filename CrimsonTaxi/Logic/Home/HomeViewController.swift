@@ -56,13 +56,32 @@ class HomeViewController: BaseViewController {
             self.elevateDriverDetails()
         }
         
+        rideDetailsController.sourceEditAction = { [weak self] in
+            guard let self else { return }
+            self.lowerateRideDetails()
+            self.elevateSearchController()
+        }
+        
+        rideDetailsController.destinationEditAction = { [weak self] in
+            guard let self else { return }
+            self.lowerateRideDetails()
+            self.elevateSearchController()
+        }
+        
+        searchController.placeSelectAction = { [weak self] in
+            guard let self else { return }
+            self.lowerateSearchController()
+            self.elevateRideDetails()
+            self.endEditing()
+        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         DispatchQueue.main.asyncAfter(deadline: .now()) {
-            //self.searchController.move(to: self.searchController.INITIAL_POINT)
-            self.rideDetailsController.move(to: self.rideDetailsController.FINAL_POINT)
+            self.searchController.move(to: self.searchController.INITIAL_POINT)
+            //self.rideDetailsController.move(to: self.rideDetailsController.FINAL_POINT)
             //self.driverDetailsController.move(to: self.driverDetailsController.FINAL_POINT)
         }
     }
@@ -88,6 +107,18 @@ class HomeViewController: BaseViewController {
     func lowerateDriverDetails() {
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             self.driverDetailsController.move(to: self.driverDetailsController.HIDE_POINT)
+        }
+    }
+    
+    func elevateSearchController() {
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            self.searchController.move(to: self.searchController.INITIAL_POINT)
+        }
+    }
+    
+    func lowerateSearchController() {
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            self.searchController.move(to: self.searchController.HIDE_POINT)
         }
     }
     

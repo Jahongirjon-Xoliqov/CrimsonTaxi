@@ -9,7 +9,7 @@ import UIKit
 
 class ProfileViewController: BaseViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var scrollView: ScrollView!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var profileImagePlaceholder: IconButton!
     @IBOutlet weak var nameFieldView: InputFieldView!
@@ -19,6 +19,9 @@ class ProfileViewController: BaseViewController {
     @IBOutlet weak var saveButton: PrimaryButton!
     @IBOutlet weak var languageButton: AppButton!
     @IBOutlet weak var themeButton: AppButton!
+    
+    var themeChangeAction: CommonAction?
+    var langugeChangeAction: CommonAction?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +42,7 @@ class ProfileViewController: BaseViewController {
         nameFieldView.set(image: UIImage(named: "profile"))
         nameFieldView.set(placeholder: "Full Name")
         
+        phoneFieldView.set(state: .phoneNumber)
         phoneFieldView.set(image: UIImage(named: "phone"))
         phoneFieldView.set(placeholder: "Contact Number")
         
@@ -54,7 +58,6 @@ class ProfileViewController: BaseViewController {
             guard let self else { return }
             self.maleButton.set(state: .seleted)
             self.femaleButton.set(state: .default)
-            Theme.settings.updateTheme(DarkTheme())
         }
         
         femaleButton.set(title: "Female")
@@ -63,7 +66,6 @@ class ProfileViewController: BaseViewController {
             guard let self else { return }
             self.femaleButton.set(state: .seleted)
             self.maleButton.set(state: .default)
-            Theme.settings.updateTheme(LightTheme())
         }
         
         themeButton.addTarget(self, 
@@ -93,13 +95,11 @@ class ProfileViewController: BaseViewController {
     }
     
     @objc private func themeButtonTapped() {
-        let vc = ThemeConfViewController()
-        navController?.pushViewController(vc, animated: true)
+        themeChangeAction?()
     }
     
     @objc private func languageButtonTapped() {
-        let vc = LanguageConfViewController()
-        navController?.pushViewController(vc, animated: true)
+        langugeChangeAction?()
     }
     
 }

@@ -40,7 +40,7 @@
                                     </constraints>
                                 </imageView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="Yi1-r5-rI7" secondAttribute="height" multiplier="1.3" id="hIY-S6-ufh"/>
                                 <constraint firstItem="x5H-Wf-0hr" firstAttribute="height" secondItem="Yi1-r5-rI7" secondAttribute="height" multiplier="0.4" id="kFr-Zt-iVr"/>

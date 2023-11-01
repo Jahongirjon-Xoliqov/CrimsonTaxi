@@ -64,6 +64,7 @@ final class Theme {
         for themeable in themeables {
             themeable.value?.updateTheme()
         }
+        notify()
     }
     
     func add(_ themeable: BaseViewController, forceUpdate: Bool = false) {
@@ -71,6 +72,7 @@ final class Theme {
         self.themeables.append(Weak(value: themeable))
         if forceUpdate {
             themeable.updateTheme()
+            notify()
         }
     }
     
@@ -78,6 +80,10 @@ final class Theme {
         self.themeables = self.themeables.filter {
             $0.value?.isEqual(themeable) == false
         }
+    }
+    
+    func notify() {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: themeChangeNotificationName), object: nil)
     }
     
 }

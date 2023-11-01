@@ -36,6 +36,9 @@ class BaseViewController: UIViewController {
         }
         processSubviews(of: self.view)
     }
+    func endEditing() {
+        view.endEditing(true)
+    }
 }
 
 extension BaseViewController {

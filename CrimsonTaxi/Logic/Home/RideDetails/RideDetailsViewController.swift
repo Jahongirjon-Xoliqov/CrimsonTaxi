@@ -26,6 +26,8 @@ class RideDetailsViewController: BaseViewController {
     var HIDE_POINT: CGFloat = SCREEN_SIZE.height
     
     var orderAction: CommonAction?
+    var sourceEditAction: CommonAction?
+    var destinationEditAction: CommonAction?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,23 +37,8 @@ class RideDetailsViewController: BaseViewController {
         dragView.clipsToBounds = true
         dragView.clip(radius: 3)
         
-        distanceHintLabel.attributedText = Attr.create(text: "Distance", 
-                                                       color: Theme.current.text,
-                                                       font: .semibold,
-                                                       size: 15,
-                                                       align: .left)
         
-        distanceLabel.attributedText = Attr.create(text: "4.4 Km",
-                                                   color: Theme.current.primary,
-                                                   font: .semibold,
-                                                   size: 17,
-                                                   align: .right)
         
-        sourcePlaceView.set(image: UIImage(named: "targetLarge"))
-        sourcePlaceView.set(place: "Current Location", details: "45 Tyler Streets, VA\n17333")
-        
-        destinationPlaceView.set(image: UIImage(named: "locFill"))
-        destinationPlaceView.set(place: "Starbucks", details: "453 William Trail Apt. 896\nLesterstad")
         
         orderButton.set(title: "6 000 som ga taksi chaqirish")
         orderButton.tapAction = { [weak self] in
@@ -64,12 +51,12 @@ class RideDetailsViewController: BaseViewController {
         
         sourceEditButton.tapAction = { [weak self] in
             guard let self else { return }
-            print("source location change tapped")
+            self.sourceEditAction?()
         }
         
         destinationEditButton.tapAction = { [weak self] in
             guard let self else { return }
-            print("destination location change tapped")
+            self.destinationEditAction?()
         }
         
     }
@@ -88,6 +75,25 @@ class RideDetailsViewController: BaseViewController {
         separatorView.backgroundColor = Theme.current.separator
         sourceEditButton.iconTintColor = Theme.current.primary
         destinationEditButton.iconTintColor = Theme.current.primary
+        
+        sourcePlaceView.set(image: UIImage(named: "targetLarge"))
+        sourcePlaceView.set(place: "Current Location", details: "45 Tyler Streets, VA\n17333")
+        
+        destinationPlaceView.set(image: UIImage(named: "locFill"))
+        destinationPlaceView.set(place: "Starbucks", details: "453 William Trail Apt. 896\nLesterstad")
+        
+        distanceHintLabel.attributedText = Attr.create(text: "Distance",
+                                                       color: Theme.current.text,
+                                                       font: .semibold,
+                                                       size: 15,
+                                                       align: .left)
+        
+        distanceLabel.attributedText = Attr.create(text: "4.4 Km",
+                                                   color: Theme.current.primary,
+                                                   font: .semibold,
+                                                   size: 17,
+                                                   align: .right)
+        
     }
     
     func drawRoad() {

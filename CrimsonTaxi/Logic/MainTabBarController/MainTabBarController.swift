@@ -7,11 +7,14 @@
 
 import UIKit
 
-class MainTabBarController: UITabBarController {
-
+final class MainTabBarController: UITabBarController {
+    
     var tabBarView: MainTabBarView = {
         MainTabBarView()
     }()
+    
+    var themeChangeAction: CommonAction?
+    var languageChangeAction: CommonAction?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +37,34 @@ class MainTabBarController: UITabBarController {
             self.selectedIndex = 1
         }
     
-        let homeViewController = BaseNavigationController(rootViewController: HomeViewController())
-        let profileViewController = BaseNavigationController(rootViewController: ProfileViewController())
+        let homeController = HomeViewController()
+        
+        let profileController = ProfileViewController()
+        profileController.themeChangeAction = { [weak self] in
+            guard let self else { return }
+            themeChangeAction?()
+        }
+        profileController.langugeChangeAction = { [weak self] in
+            guard let self else { return }
+            languageChangeAction?()
+        }
+        
+        let homeViewController = BaseNavigationController(rootViewController: homeController)
+        let profileViewController = BaseNavigationController(rootViewController: profileController)
         
         setViewControllers([homeViewController, profileViewController], animated: false)
         
-    }
+        subscribeForThemeModifications()
         
+    }
+    
+    private func subscribeForThemeModifications() {
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: themeChangeNotificationName), object: nil, queue: .main) { _ in
+            self.view.backgroundColor = Theme.current.background
+            self.tabBarView.modifyColors(self.selectedIndex)
+        }
+    }
+    
+    
+    
 }
