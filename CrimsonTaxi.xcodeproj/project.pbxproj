@@ -27,6 +27,7 @@
 		0A32C7382AF2640F00FB17D1 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A32C7372AF2640F00FB17D1 /* FlowController.swift */; };
 		0A32C73A2AF2657400FB17D1 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A32C7392AF2657400FB17D1 /* CoordinatorFactory.swift */; };
 		0A32C73C2AF27F2A00FB17D1 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A32C73B2AF27F2A00FB17D1 /* MainTabBarCoordinator.swift */; };
+		0A32C73E2AF296B300FB17D1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A32C73D2AF296B300FB17D1 /* AppCoordinator.swift */; };
 		0A3542C82AEBCB8100FBC282 /* ThemeConfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3542C62AEBCB8100FBC282 /* ThemeConfViewController.swift */; };
 		0A3542C92AEBCB8100FBC282 /* ThemeConfViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3542C72AEBCB8100FBC282 /* ThemeConfViewController.xib */; };
 		0A3542CD2AEBD99600FBC282 /* LanguageConfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3542CB2AEBD99600FBC282 /* LanguageConfViewController.swift */; };
@@ -118,6 +119,7 @@
 		0A32C7372AF2640F00FB17D1 /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
 		0A32C7392AF2657400FB17D1 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		0A32C73B2AF27F2A00FB17D1 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
+		0A32C73D2AF296B300FB17D1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		0A3542C62AEBCB8100FBC282 /* ThemeConfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeConfViewController.swift; sourceTree = "<group>"; };
 		0A3542C72AEBCB8100FBC282 /* ThemeConfViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemeConfViewController.xib; sourceTree = "<group>"; };
 		0A3542CB2AEBD99600FBC282 /* LanguageConfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageConfViewController.swift; sourceTree = "<group>"; };
@@ -381,6 +383,7 @@
 		0A5EDE6F2AF120E7001138DE /* AppCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				0A32C73D2AF296B300FB17D1 /* AppCoordinator.swift */,
 				0A32C73B2AF27F2A00FB17D1 /* MainTabBarCoordinator.swift */,
 				0A32C7272AF2316B00FB17D1 /* RegistrationCoordinator.swift */,
 				0A32C7332AF2627600FB17D1 /* Coordinator.swift */,
@@ -805,6 +808,7 @@
 				0A32C7282AF2316B00FB17D1 /* RegistrationCoordinator.swift in Sources */,
 				0ABF34872AE2771500CE6D0F /* UIColor+Extensions.swift in Sources */,
 				0A79A4532AE2EBF2006059A9 /* BaseUIView.swift in Sources */,
+				0A32C73E2AF296B300FB17D1 /* AppCoordinator.swift in Sources */,
 				0A8042272AE6CB6200EFF450 /* OtpTextField.swift in Sources */,
 				0A1D43F42AE7BDDE00D9D545 /* SearchFieldView.swift in Sources */,
 			);

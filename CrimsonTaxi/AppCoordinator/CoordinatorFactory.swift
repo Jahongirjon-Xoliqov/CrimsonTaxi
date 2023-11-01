@@ -9,12 +9,12 @@ import UIKit
 
 final class CoordinatorFactory {
     
-    func createRegistrationCoordinator() -> RegistrationCoordinator {
-        RegistrationCoordinator()
+    func createRegistrationCoordinator(_ navController: UINavigationController) -> RegistrationCoordinator {
+        RegistrationCoordinator(navigationController: navController)
     }
     
-    func createMainTabBarCoordinator() -> MainTabBarCoordinator {
-        MainTabBarCoordinator()
+    func createMainTabBarCoordinator(_ navController: UINavigationController) -> MainTabBarCoordinator {
+        MainTabBarCoordinator(navigationController: navController)
     }
     
 }

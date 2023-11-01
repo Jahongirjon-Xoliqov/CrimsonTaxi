@@ -14,8 +14,8 @@ final class RegistrationCoordinator: Coordinator {
     
     private let modulesFactory = ModulesFactory()
     
-    init() {
-        self.navigationController = BaseNavigationController()
+    init(navigationController: UINavigationController? = nil) {
+        self.navigationController = navigationController
     }
     
     func start() {
@@ -31,7 +31,7 @@ final class RegistrationCoordinator: Coordinator {
             self.showVerificationModule()
         }
         
-        navigationController?.pushViewController(controller, animated: false)
+        navigationController?.pushViewController(controller, animated: true)
         
     }
     

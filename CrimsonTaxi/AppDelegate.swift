@@ -17,23 +17,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private var rootCoordinator: Coordinator?
-    private let coordinatorFactory = CoordinatorFactory()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        if false {
-            rootCoordinator = coordinatorFactory.createMainTabBarCoordinator()
-        } else {
-            rootCoordinator = coordinatorFactory.createRegistrationCoordinator()
-            rootCoordinator?.completionHandler = { [weak self] in
-                guard let self else { return }
-                
-                rootCoordinator = coordinatorFactory.createMainTabBarCoordinator()
-                window?.rootViewController = rootCoordinator?.navigationController
-                rootCoordinator?.start()
-                
-            }
-        }
+//        if false {
+//            rootCoordinator = coordinatorFactory.createMainTabBarCoordinator()
+//        } else {
+//            rootCoordinator = coordinatorFactory.createRegistrationCoordinator()
+//            rootCoordinator?.completionHandler = { [weak self] in
+//                guard let self else { return }
+//                
+//                rootCoordinator = coordinatorFactory.createMainTabBarCoordinator()
+//                window?.rootViewController = rootCoordinator?.navigationController
+//                rootCoordinator?.start()
+//                
+//            }
+//        }
+        
+        rootCoordinator = AppCoordinator(navigationController: BaseNavigationController())
         
         window = UIWindow()
         window?.rootViewController = rootCoordinator?.navigationController

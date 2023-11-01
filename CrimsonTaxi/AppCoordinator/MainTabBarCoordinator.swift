@@ -12,6 +12,10 @@ final class MainTabBarCoordinator: Coordinator {
     var completionHandler: CoordinatorHandler?
     var navigationController: UINavigationController?
     
+    init(navigationController: UINavigationController? = nil) {
+        self.navigationController = navigationController
+    }
+    
     init() {
         self.navigationController = BaseNavigationController()
     }
