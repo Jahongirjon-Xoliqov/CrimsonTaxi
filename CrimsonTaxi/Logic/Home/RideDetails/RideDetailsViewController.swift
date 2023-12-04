@@ -94,6 +94,8 @@ class RideDetailsViewController: BaseViewController {
                                                    size: 17,
                                                    align: .right)
         
+        view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(panGestureTriggered)))
+        
     }
     
     func drawRoad() {
@@ -124,6 +126,24 @@ class RideDetailsViewController: BaseViewController {
         }
     }
     
+    @objc private func panGestureTriggered(_ sender: UIPanGestureRecognizer) {
+        
+        switch sender.state {
+        case .changed:
+            let translation = sender.translation(in: view)
+            let rabbered = getSwipeUpPoint(from: translation)
+            view.frame.origin = CGPoint(x: rabbered.x, y: rabbered.y + FINAL_POINT)
+        case .ended:
+            move(to: self.FINAL_POINT)
+        default:
+            break
+        }
+        
+    }
+    
+    
+    
+    /*
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         guard let touch = touches.first else { return }
@@ -146,5 +166,6 @@ class RideDetailsViewController: BaseViewController {
         super.touchesCancelled(touches, with: event)
         touchPoint = nil
     }
+    */
     
 }
