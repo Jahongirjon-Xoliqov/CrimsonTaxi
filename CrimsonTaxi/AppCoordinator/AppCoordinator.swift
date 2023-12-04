@@ -29,7 +29,7 @@ final class AppCoordinator: Coordinator {
     
     private func showRegister() {
         
-        let registerCoordinator = coordinatorFactory.createRegistrationCoordinator(self.navigationController!)
+        let registerCoordinator = coordinatorFactory.createRegistrationCoordinator(navigationController)
         
         childCoordinators.append(registerCoordinator)
         
@@ -44,7 +44,7 @@ final class AppCoordinator: Coordinator {
     
     private func showMain() {
         
-        let mainCoordinator = coordinatorFactory.createMainTabBarCoordinator(self.navigationController!)
+        let mainCoordinator = coordinatorFactory.createMainTabBarCoordinator(navigationController)
         
         childCoordinators.append(mainCoordinator)
         

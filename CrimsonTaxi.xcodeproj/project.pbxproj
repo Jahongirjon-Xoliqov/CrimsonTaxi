@@ -50,6 +50,16 @@
 		0A556A752AE964A30053A5BA /* PlaceDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A556A742AE964A30053A5BA /* PlaceDetailsView.xib */; };
 		0A720ECB2AE57DD400511167 /* NavTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A720ECA2AE57DD400511167 /* NavTitleView.swift */; };
 		0A720ECD2AE57E2A00511167 /* NavTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A720ECC2AE57E2A00511167 /* NavTitleView.xib */; };
+		0A779DF92AF368D90057E416 /* SimpleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A779DF82AF368D90057E416 /* SimpleScrollView.swift */; };
+		0A779E002AF37D130057E416 /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A779DFA2AF37D130057E416 /* CGPoint+Utils.swift */; };
+		0A779E012AF37D130057E416 /* Comparable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A779DFB2AF37D130057E416 /* Comparable+Utils.swift */; };
+		0A779E022AF37D130057E416 /* CASpringAnimation+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A779DFC2AF37D130057E416 /* CASpringAnimation+Utils.swift */; };
+		0A779E032AF37D130057E416 /* GeometryUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A779DFD2AF37D130057E416 /* GeometryUtils.swift */; };
+		0A779E042AF37D130057E416 /* UISpringTimingParameters+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A779DFE2AF37D130057E416 /* UISpringTimingParameters+Utils.swift */; };
+		0A779E052AF37D130057E416 /* TimerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A779DFF2AF37D130057E416 /* TimerAnimation.swift */; };
+		0A779E092AF37D7B0057E416 /* TimingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A779E062AF37D7B0057E416 /* TimingParameters.swift */; };
+		0A779E0A2AF37D7B0057E416 /* DecelerationTimingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A779E072AF37D7B0057E416 /* DecelerationTimingParameters.swift */; };
+		0A779E0B2AF37D7B0057E416 /* SpringTimingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A779E082AF37D7B0057E416 /* SpringTimingParameters.swift */; };
 		0A79A4512AE2EB66006059A9 /* NavBackButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A79A4502AE2EB66006059A9 /* NavBackButton.xib */; };
 		0A79A4532AE2EBF2006059A9 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79A4522AE2EBF2006059A9 /* BaseUIView.swift */; };
 		0A79A4552AE2F7F2006059A9 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79A4542AE2F7F2006059A9 /* UIView+Extensions.swift */; };
@@ -62,10 +72,16 @@
 		0A8042272AE6CB6200EFF450 /* OtpTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8042232AE6CB6200EFF450 /* OtpTextField.swift */; };
 		0A8042282AE6CB6200EFF450 /* OtpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8042242AE6CB6200EFF450 /* OtpView.xib */; };
 		0A8042292AE6CB6200EFF450 /* OtpViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8042252AE6CB6200EFF450 /* OtpViewDecorator.swift */; };
+		0A80AA702AF38B7E006FC317 /* RubberBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80AA6F2AF38B7E006FC317 /* RubberBand.swift */; };
+		0A80AA722AF38BCF006FC317 /* CGRect+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80AA712AF38BCF006FC317 /* CGRect+Utils.swift */; };
+		0A99055A2B1A01EF00DBF917 /* TransferTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9905592B1A01EF00DBF917 /* TransferTextField.swift */; };
 		0AA8B8D82AE6653E000FEBF8 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8B8D72AE6653E000FEBF8 /* Optional+Extensions.swift */; };
 		0AA8B8DD2AE66C61000FEBF8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AA8B8DF2AE66C61000FEBF8 /* Localizable.strings */; };
 		0AA8B8E62AE694AC000FEBF8 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8B8E52AE694AC000FEBF8 /* PrimaryButton.swift */; };
 		0AA8B8E92AE69529000FEBF8 /* PrimaryButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA8B8E82AE69529000FEBF8 /* PrimaryButton.xib */; };
+		0AABBA9A2B15EF54007DC54E /* CircleDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABBA982B15EF54007DC54E /* CircleDrawerViewController.swift */; };
+		0AABBA9B2B15EF54007DC54E /* CircleDrawerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AABBA992B15EF54007DC54E /* CircleDrawerViewController.xib */; };
+		0AABBA9D2B161257007DC54E /* CircleVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABBA9C2B161257007DC54E /* CircleVView.swift */; };
 		0AB4EC122AEFACAF00B44B78 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4EC112AEFACAF00B44B78 /* ScrollView.swift */; };
 		0AB4EC162AEFB66D00B44B78 /* PlaceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4EC142AEFB66D00B44B78 /* PlaceCollectionViewCell.swift */; };
 		0AB4EC172AEFB66D00B44B78 /* PlaceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB4EC152AEFB66D00B44B78 /* PlaceCollectionViewCell.xib */; };
@@ -142,6 +158,16 @@
 		0A556A742AE964A30053A5BA /* PlaceDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceDetailsView.xib; sourceTree = "<group>"; };
 		0A720ECA2AE57DD400511167 /* NavTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTitleView.swift; sourceTree = "<group>"; };
 		0A720ECC2AE57E2A00511167 /* NavTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavTitleView.xib; sourceTree = "<group>"; };
+		0A779DF82AF368D90057E416 /* SimpleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleScrollView.swift; sourceTree = "<group>"; };
+		0A779DFA2AF37D130057E416 /* CGPoint+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Utils.swift"; sourceTree = "<group>"; };
+		0A779DFB2AF37D130057E416 /* Comparable+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Comparable+Utils.swift"; sourceTree = "<group>"; };
+		0A779DFC2AF37D130057E416 /* CASpringAnimation+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CASpringAnimation+Utils.swift"; sourceTree = "<group>"; };
+		0A779DFD2AF37D130057E416 /* GeometryUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometryUtils.swift; sourceTree = "<group>"; };
+		0A779DFE2AF37D130057E416 /* UISpringTimingParameters+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISpringTimingParameters+Utils.swift"; sourceTree = "<group>"; };
+		0A779DFF2AF37D130057E416 /* TimerAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerAnimation.swift; sourceTree = "<group>"; };
+		0A779E062AF37D7B0057E416 /* TimingParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimingParameters.swift; sourceTree = "<group>"; };
+		0A779E072AF37D7B0057E416 /* DecelerationTimingParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecelerationTimingParameters.swift; sourceTree = "<group>"; };
+		0A779E082AF37D7B0057E416 /* SpringTimingParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTimingParameters.swift; sourceTree = "<group>"; };
 		0A79A4502AE2EB66006059A9 /* NavBackButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavBackButton.xib; sourceTree = "<group>"; };
 		0A79A4522AE2EBF2006059A9 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
 		0A79A4542AE2F7F2006059A9 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -154,11 +180,17 @@
 		0A8042232AE6CB6200EFF450 /* OtpTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpTextField.swift; sourceTree = "<group>"; };
 		0A8042242AE6CB6200EFF450 /* OtpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtpView.xib; sourceTree = "<group>"; };
 		0A8042252AE6CB6200EFF450 /* OtpViewDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpViewDecorator.swift; sourceTree = "<group>"; };
+		0A80AA6F2AF38B7E006FC317 /* RubberBand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubberBand.swift; sourceTree = "<group>"; };
+		0A80AA712AF38BCF006FC317 /* CGRect+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Utils.swift"; sourceTree = "<group>"; };
+		0A9905592B1A01EF00DBF917 /* TransferTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferTextField.swift; sourceTree = "<group>"; };
 		0AA8B8D72AE6653E000FEBF8 /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 		0AA8B8DE2AE66C61000FEBF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0AA8B8E42AE675B1000FEBF8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0AA8B8E52AE694AC000FEBF8 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		0AA8B8E82AE69529000FEBF8 /* PrimaryButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrimaryButton.xib; sourceTree = "<group>"; };
+		0AABBA982B15EF54007DC54E /* CircleDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleDrawerViewController.swift; sourceTree = "<group>"; };
+		0AABBA992B15EF54007DC54E /* CircleDrawerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleDrawerViewController.xib; sourceTree = "<group>"; };
+		0AABBA9C2B161257007DC54E /* CircleVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleVView.swift; sourceTree = "<group>"; };
 		0AB4EC112AEFACAF00B44B78 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		0AB4EC142AEFB66D00B44B78 /* PlaceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCollectionViewCell.swift; sourceTree = "<group>"; };
 		0AB4EC152AEFB66D00B44B78 /* PlaceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -219,6 +251,7 @@
 		0A06F5C42ADD41BA006BCB4F /* CrimsonTaxi */ = {
 			isa = PBXGroup;
 			children = (
+				0A779DF72AF368BD0057E416 /* CustomScroll */,
 				0A5EDE6F2AF120E7001138DE /* AppCoordinator */,
 				0ABF34942AE2A1B700CE6D0F /* Resources */,
 				0ABF348B2AE28D9100CE6D0F /* Logic */,
@@ -388,8 +421,8 @@
 				0A32C7272AF2316B00FB17D1 /* RegistrationCoordinator.swift */,
 				0A32C7332AF2627600FB17D1 /* Coordinator.swift */,
 				0A32C7352AF2636E00FB17D1 /* ModulesFactory.swift */,
-				0A32C7372AF2640F00FB17D1 /* FlowController.swift */,
 				0A32C7392AF2657400FB17D1 /* CoordinatorFactory.swift */,
+				0A32C7372AF2640F00FB17D1 /* FlowController.swift */,
 			);
 			path = AppCoordinator;
 			sourceTree = "<group>";
@@ -401,6 +434,25 @@
 				0A720ECC2AE57E2A00511167 /* NavTitleView.xib */,
 			);
 			path = NavTitleView;
+			sourceTree = "<group>";
+		};
+		0A779DF72AF368BD0057E416 /* CustomScroll */ = {
+			isa = PBXGroup;
+			children = (
+				0A779DF82AF368D90057E416 /* SimpleScrollView.swift */,
+				0A779DFC2AF37D130057E416 /* CASpringAnimation+Utils.swift */,
+				0A779DFA2AF37D130057E416 /* CGPoint+Utils.swift */,
+				0A80AA712AF38BCF006FC317 /* CGRect+Utils.swift */,
+				0A779DFB2AF37D130057E416 /* Comparable+Utils.swift */,
+				0A779DFD2AF37D130057E416 /* GeometryUtils.swift */,
+				0A779DFF2AF37D130057E416 /* TimerAnimation.swift */,
+				0A779DFE2AF37D130057E416 /* UISpringTimingParameters+Utils.swift */,
+				0A779E072AF37D7B0057E416 /* DecelerationTimingParameters.swift */,
+				0A779E082AF37D7B0057E416 /* SpringTimingParameters.swift */,
+				0A80AA6F2AF38B7E006FC317 /* RubberBand.swift */,
+				0A779E062AF37D7B0057E416 /* TimingParameters.swift */,
+			);
+			path = CustomScroll;
 			sourceTree = "<group>";
 		};
 		0A8042132AE6B35B00EFF450 /* PrimaryButton */ = {
@@ -541,6 +593,10 @@
 			children = (
 				0ABF348D2AE28DDB00CE6D0F /* TestViewController.swift */,
 				0ABF348E2AE28DDB00CE6D0F /* TestViewController.xib */,
+				0AABBA982B15EF54007DC54E /* CircleDrawerViewController.swift */,
+				0AABBA992B15EF54007DC54E /* CircleDrawerViewController.xib */,
+				0AABBA9C2B161257007DC54E /* CircleVView.swift */,
+				0A9905592B1A01EF00DBF917 /* TransferTextField.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -732,6 +788,7 @@
 				0A1D43F12AE7BC4E00D9D545 /* PlaceSearchViewController.xib in Resources */,
 				0A1D43F62AE7BE0D00D9D545 /* SearchFieldView.xib in Resources */,
 				0AD3BF5E2AE989F5002AB3B3 /* IconButton.xib in Resources */,
+				0AABBA9B2B15EF54007DC54E /* CircleDrawerViewController.xib in Resources */,
 				0A79A4512AE2EB66006059A9 /* NavBackButton.xib in Resources */,
 				0A8042282AE6CB6200EFF450 /* OtpView.xib in Resources */,
 				0ABF34AD2AE2CF0C00CE6D0F /* PersonalDataViewController.xib in Resources */,
@@ -760,6 +817,8 @@
 			files = (
 				0ABF34832AE2720C00CE6D0F /* Theme.swift in Sources */,
 				0AEDE8572AE3A668001CCFEB /* NSAttributedString+Extensions.swift in Sources */,
+				0A80AA702AF38B7E006FC317 /* RubberBand.swift in Sources */,
+				0A80AA722AF38BCF006FC317 /* CGRect+Utils.swift in Sources */,
 				0AD3BF5C2AE989B0002AB3B3 /* IconButton.swift in Sources */,
 				0A51A5402AEA37480023C253 /* DriverDetailsViewController.swift in Sources */,
 				0ABF348A2AE2828C00CE6D0F /* Cache.swift in Sources */,
@@ -778,34 +837,47 @@
 				0A1D43EA2AE7B88500D9D545 /* MapView.swift in Sources */,
 				0A32C73C2AF27F2A00FB17D1 /* MainTabBarCoordinator.swift in Sources */,
 				0A8042152AE6B39200EFF450 /* SelectableView.swift in Sources */,
+				0A779E022AF37D130057E416 /* CASpringAnimation+Utils.swift in Sources */,
 				0A1D43DB2AE7998000D9D545 /* MainTabBarController.swift in Sources */,
 				0A1D43DF2AE79E8E00D9D545 /* MainTabBarView.swift in Sources */,
 				0A556A662AE9152C0053A5BA /* CGFloat+Extensions.swift in Sources */,
+				0A779E052AF37D130057E416 /* TimerAnimation.swift in Sources */,
 				0A79A4552AE2F7F2006059A9 /* UIView+Extensions.swift in Sources */,
 				0A32C7342AF2627600FB17D1 /* Coordinator.swift in Sources */,
 				0A556A6A2AE95EE40053A5BA /* RideDetailsViewController.swift in Sources */,
 				0ABF34A72AE2A95400CE6D0F /* UIViewController+Extensions.swift in Sources */,
+				0A779E012AF37D130057E416 /* Comparable+Utils.swift in Sources */,
+				0A779E032AF37D130057E416 /* GeometryUtils.swift in Sources */,
 				0A556A6E2AE960440053A5BA /* PlaceCircleView.swift in Sources */,
 				0A3542CD2AEBD99600FBC282 /* LanguageConfViewController.swift in Sources */,
 				0A32C7382AF2640F00FB17D1 /* FlowController.swift in Sources */,
+				0A99055A2B1A01EF00DBF917 /* TransferTextField.swift in Sources */,
 				0AEDE8512AE3A28F001CCFEB /* InputFieldView.swift in Sources */,
+				0A779E092AF37D7B0057E416 /* TimingParameters.swift in Sources */,
+				0A779E042AF37D130057E416 /* UISpringTimingParameters+Utils.swift in Sources */,
 				0A51A5452AEA58ED0023C253 /* ProfileViewController.swift in Sources */,
 				0A8042292AE6CB6200EFF450 /* OtpViewDecorator.swift in Sources */,
 				0AEDE8532AE3A5A3001CCFEB /* UITextField+Extensions.swift in Sources */,
 				0A3542C82AEBCB8100FBC282 /* ThemeConfViewController.swift in Sources */,
 				0AA8B8E62AE694AC000FEBF8 /* PrimaryButton.swift in Sources */,
 				0A1D43F02AE7BC4E00D9D545 /* PlaceSearchViewController.swift in Sources */,
+				0AABBA9D2B161257007DC54E /* CircleVView.swift in Sources */,
 				0A54DA3A2ADFAB6800F15E17 /* BaseViewController.swift in Sources */,
 				0ABF34B32AE2D1BF00CE6D0F /* NavBackButton.swift in Sources */,
 				0AEDE8552AE3A648001CCFEB /* String+Extensions.swift in Sources */,
 				0A32C73A2AF2657400FB17D1 /* CoordinatorFactory.swift in Sources */,
+				0A779E002AF37D130057E416 /* CGPoint+Utils.swift in Sources */,
 				0A720ECB2AE57DD400511167 /* NavTitleView.swift in Sources */,
 				0A80421B2AE6C1ED00EFF450 /* VerificationViewController.swift in Sources */,
 				0AA8B8D82AE6653E000FEBF8 /* Optional+Extensions.swift in Sources */,
 				0ABF348F2AE28DDB00CE6D0F /* TestViewController.swift in Sources */,
 				0A556A732AE964540053A5BA /* PlaceDetailsView.swift in Sources */,
+				0A779E0B2AF37D7B0057E416 /* SpringTimingParameters.swift in Sources */,
 				0ABF34AF2AE2CFEB00CE6D0F /* BaseNavigationController.swift in Sources */,
+				0A779DF92AF368D90057E416 /* SimpleScrollView.swift in Sources */,
 				0A32C7282AF2316B00FB17D1 /* RegistrationCoordinator.swift in Sources */,
+				0A779E0A2AF37D7B0057E416 /* DecelerationTimingParameters.swift in Sources */,
+				0AABBA9A2B15EF54007DC54E /* CircleDrawerViewController.swift in Sources */,
 				0ABF34872AE2771500CE6D0F /* UIColor+Extensions.swift in Sources */,
 				0A79A4532AE2EBF2006059A9 /* BaseUIView.swift in Sources */,
 				0A32C73E2AF296B300FB17D1 /* AppCoordinator.swift in Sources */,
@@ -985,7 +1057,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1016,7 +1088,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

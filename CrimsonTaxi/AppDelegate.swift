@@ -20,20 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-//        if false {
-//            rootCoordinator = coordinatorFactory.createMainTabBarCoordinator()
-//        } else {
-//            rootCoordinator = coordinatorFactory.createRegistrationCoordinator()
-//            rootCoordinator?.completionHandler = { [weak self] in
-//                guard let self else { return }
-//                
-//                rootCoordinator = coordinatorFactory.createMainTabBarCoordinator()
-//                window?.rootViewController = rootCoordinator?.navigationController
-//                rootCoordinator?.start()
-//                
-//            }
-//        }
-        
         rootCoordinator = AppCoordinator(navigationController: BaseNavigationController())
         
         window = UIWindow()

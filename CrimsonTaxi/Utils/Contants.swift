@@ -32,3 +32,7 @@ let primaryShadow: AppShadow = CommonShadow(radius: 10,
                                             offset: CGSize(width: 0, height: 10))
 
 let themeChangeNotificationName: String = "APP-THEME-MODIFICATION-NOTIFICATION"
+
+public enum Constants {
+    
+}

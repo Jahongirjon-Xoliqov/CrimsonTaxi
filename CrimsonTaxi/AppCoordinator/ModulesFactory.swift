@@ -26,8 +26,8 @@ final class ModulesFactory {
         ThemeConfViewController()
     }
     
-    func createLanguageConfController() -> ThemeConfViewController {
-        ThemeConfViewController()
+    func createLanguageConfController() -> LanguageConfViewController {
+        LanguageConfViewController()
     }
     
 }

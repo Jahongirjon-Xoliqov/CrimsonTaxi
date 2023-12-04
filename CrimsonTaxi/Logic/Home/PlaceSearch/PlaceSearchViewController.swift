@@ -52,11 +52,16 @@ final class PlaceSearchViewController: BaseViewController {
     
     override func configureAppearance() {
         super.configureAppearance()
-        view.clip(radius: 16)
+        view.clip(radius: 26)
         view.applyShadow(opacity: 0.3)
         view.backgroundColor = Theme.current.background
         collectionView.reloadData()
     }
+    
+}
+
+
+extension PlaceSearchViewController {
     
     func move(to point: CGFloat) {
         UIView.animate(withDuration: DEFAULT_ANIMATION_DURATION) {
@@ -93,6 +98,7 @@ final class PlaceSearchViewController: BaseViewController {
     }
     
 }
+
 
 extension PlaceSearchViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
