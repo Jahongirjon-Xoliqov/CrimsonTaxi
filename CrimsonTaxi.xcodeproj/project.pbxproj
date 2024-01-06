@@ -82,6 +82,8 @@
 		0AABBA9A2B15EF54007DC54E /* CircleDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABBA982B15EF54007DC54E /* CircleDrawerViewController.swift */; };
 		0AABBA9B2B15EF54007DC54E /* CircleDrawerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AABBA992B15EF54007DC54E /* CircleDrawerViewController.xib */; };
 		0AABBA9D2B161257007DC54E /* CircleVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABBA9C2B161257007DC54E /* CircleVView.swift */; };
+		0AAC318B2B3D95530054EA61 /* AppContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC31892B3D95530054EA61 /* AppContainerViewController.swift */; };
+		0AAC318C2B3D95530054EA61 /* AppContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC318A2B3D95530054EA61 /* AppContainerViewController.xib */; };
 		0AB4EC122AEFACAF00B44B78 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4EC112AEFACAF00B44B78 /* ScrollView.swift */; };
 		0AB4EC162AEFB66D00B44B78 /* PlaceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4EC142AEFB66D00B44B78 /* PlaceCollectionViewCell.swift */; };
 		0AB4EC172AEFB66D00B44B78 /* PlaceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB4EC152AEFB66D00B44B78 /* PlaceCollectionViewCell.xib */; };
@@ -192,6 +194,8 @@
 		0AABBA982B15EF54007DC54E /* CircleDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleDrawerViewController.swift; sourceTree = "<group>"; };
 		0AABBA992B15EF54007DC54E /* CircleDrawerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleDrawerViewController.xib; sourceTree = "<group>"; };
 		0AABBA9C2B161257007DC54E /* CircleVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleVView.swift; sourceTree = "<group>"; };
+		0AAC31892B3D95530054EA61 /* AppContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainerViewController.swift; sourceTree = "<group>"; };
+		0AAC318A2B3D95530054EA61 /* AppContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppContainerViewController.xib; sourceTree = "<group>"; };
 		0AB4EC112AEFACAF00B44B78 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		0AB4EC142AEFB66D00B44B78 /* PlaceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCollectionViewCell.swift; sourceTree = "<group>"; };
 		0AB4EC152AEFB66D00B44B78 /* PlaceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -253,6 +257,7 @@
 		0A06F5C42ADD41BA006BCB4F /* CrimsonTaxi */ = {
 			isa = PBXGroup;
 			children = (
+				0AAC31882B3D95280054EA61 /* Samples */,
 				0A779DF72AF368BD0057E416 /* CustomScroll */,
 				0A5EDE6F2AF120E7001138DE /* AppCoordinator */,
 				0ABF34942AE2A1B700CE6D0F /* Resources */,
@@ -501,6 +506,15 @@
 				0A8042162AE6B3E300EFF450 /* SelectableView.xib */,
 			);
 			path = SeletableView;
+			sourceTree = "<group>";
+		};
+		0AAC31882B3D95280054EA61 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				0AAC31892B3D95530054EA61 /* AppContainerViewController.swift */,
+				0AAC318A2B3D95530054EA61 /* AppContainerViewController.xib */,
+			);
+			path = Samples;
 			sourceTree = "<group>";
 		};
 		0AB4EC102AEFAC9D00B44B78 /* Scroll */ = {
@@ -807,6 +821,7 @@
 				0ABF349F2AE2A20400CE6D0F /* Montserrat-Medium.ttf in Resources */,
 				0ABF34A32AE2A20400CE6D0F /* Montserrat-Regular.ttf in Resources */,
 				0A06F5CF2ADD41BB006BCB4F /* Assets.xcassets in Resources */,
+				0AAC318C2B3D95530054EA61 /* AppContainerViewController.xib in Resources */,
 				0A80421C2AE6C1ED00EFF450 /* VerificationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -852,6 +867,7 @@
 				0A779E012AF37D130057E416 /* Comparable+Utils.swift in Sources */,
 				0A779E032AF37D130057E416 /* GeometryUtils.swift in Sources */,
 				0A556A6E2AE960440053A5BA /* PlaceCircleView.swift in Sources */,
+				0AAC318B2B3D95530054EA61 /* AppContainerViewController.swift in Sources */,
 				0A3542CD2AEBD99600FBC282 /* LanguageConfViewController.swift in Sources */,
 				0A32C7382AF2640F00FB17D1 /* FlowController.swift in Sources */,
 				0A99055A2B1A01EF00DBF917 /* TransferTextField.swift in Sources */,

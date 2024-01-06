@@ -23,10 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         rootCoordinator = AppCoordinator(navigationController: BaseNavigationController())
         
         window = UIWindow()
-        window?.rootViewController = rootCoordinator?.navigationController
+        window?.rootViewController = AppContainerViewController()//rootCoordinator?.navigationController
         window?.makeKeyAndVisible()
         
-        rootCoordinator?.start()
+        //rootCoordinator?.start()
         
         return true
     }

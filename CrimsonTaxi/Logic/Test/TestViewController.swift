@@ -12,7 +12,6 @@ final class TestViewController: BaseViewController {
     @IBOutlet weak var boundsView: UIView!
     @IBOutlet weak var circleView: UIView!
     
-    
     private var contentOffsetBounds: CGRect {
         CGRect(x: 0, y: view.bounds.minY, width: 0.01, height: 0.01)
     }

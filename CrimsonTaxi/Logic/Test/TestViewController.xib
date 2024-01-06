@@ -11,8 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController" customModule="CrimsonTaxi" customModuleProvider="target">
             <connections>
-                <outlet property="boundsView" destination="LXX-Td-Trm" id="Uyr-UF-tc9"/>
-                <outlet property="circleView" destination="7T1-ka-ajy" id="QfA-iB-UTO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,41 +18,14 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXX-Td-Trm">
-                    <rect key="frame" x="96.666666666666686" y="326" width="200" height="200"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="200" id="IZM-QL-vSi"/>
-                        <constraint firstAttribute="height" constant="200" id="xOP-kA-cHX"/>
-                    </constraints>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7T1-ka-ajy">
-                    <rect key="frame" x="171.66666666666666" y="401" width="50" height="50"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="71g-ey-phd"/>
-                        <constraint firstAttribute="height" constant="50" id="AMt-EX-8EM"/>
-                    </constraints>
-                </view>
-            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="7T1-ka-ajy" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Yis-DP-mtk"/>
-                <constraint firstItem="LXX-Td-Trm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="atF-3c-sGt"/>
-                <constraint firstItem="LXX-Td-Trm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rAh-iL-TpT"/>
-                <constraint firstItem="7T1-ka-ajy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wdf-TC-Cr5"/>
-            </constraints>
             <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
         </view>
     </objects>
     <resources>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
