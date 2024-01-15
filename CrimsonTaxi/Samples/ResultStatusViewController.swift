@@ -23,6 +23,40 @@ final class ResultStatusViewController: UIViewController {
     @IBAction func action(_ sender: Any) {
         let action = self.result.subactions!.first!.action
         action?()
+        let parentInstance: ParentClass = ChildClass()
+        parentInstance.someMethod()
     }
     
 }
+
+class A {
+    func action() {
+        
+    }
+}
+
+class B: A {
+    override func action() {
+        
+    }
+}
+
+class C: B {
+    override func action() {
+        
+    }
+}
+
+class ParentClass {
+    func someMethod() {
+        print("ParentClass - someMethod")
+    }
+}
+
+class ChildClass: ParentClass {
+    override func someMethod() {
+        print("ChildClass - someMethod")
+    }
+}
+
+
