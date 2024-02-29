@@ -51,6 +51,7 @@
 		0A556A702AE961020053A5BA /* PlaceCircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A556A6F2AE961020053A5BA /* PlaceCircleView.xib */; };
 		0A556A732AE964540053A5BA /* PlaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A556A722AE964540053A5BA /* PlaceDetailsView.swift */; };
 		0A556A752AE964A30053A5BA /* PlaceDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A556A742AE964A30053A5BA /* PlaceDetailsView.xib */; };
+		0A5C272A2B91277C00D9EEA5 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A5C27292B91277C00D9EEA5 /* giphy.gif */; };
 		0A720ECB2AE57DD400511167 /* NavTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A720ECA2AE57DD400511167 /* NavTitleView.swift */; };
 		0A720ECD2AE57E2A00511167 /* NavTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A720ECC2AE57E2A00511167 /* NavTitleView.xib */; };
 		0A779DF92AF368D90057E416 /* SimpleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A779DF82AF368D90057E416 /* SimpleScrollView.swift */; };
@@ -78,6 +79,7 @@
 		0A80AA702AF38B7E006FC317 /* RubberBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80AA6F2AF38B7E006FC317 /* RubberBand.swift */; };
 		0A80AA722AF38BCF006FC317 /* CGRect+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80AA712AF38BCF006FC317 /* CGRect+Utils.swift */; };
 		0A99055A2B1A01EF00DBF917 /* TransferTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9905592B1A01EF00DBF917 /* TransferTextField.swift */; };
+		0AA250F52B90B0AA00D525D8 /* AttributedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA250F42B90B0AA00D525D8 /* AttributedLabel.swift */; };
 		0AA8B8D82AE6653E000FEBF8 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8B8D72AE6653E000FEBF8 /* Optional+Extensions.swift */; };
 		0AA8B8DD2AE66C61000FEBF8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AA8B8DF2AE66C61000FEBF8 /* Localizable.strings */; };
 		0AA8B8E62AE694AC000FEBF8 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8B8E52AE694AC000FEBF8 /* PrimaryButton.swift */; };
@@ -166,6 +168,7 @@
 		0A556A6F2AE961020053A5BA /* PlaceCircleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCircleView.xib; sourceTree = "<group>"; };
 		0A556A722AE964540053A5BA /* PlaceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsView.swift; sourceTree = "<group>"; };
 		0A556A742AE964A30053A5BA /* PlaceDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceDetailsView.xib; sourceTree = "<group>"; };
+		0A5C27292B91277C00D9EEA5 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
 		0A720ECA2AE57DD400511167 /* NavTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTitleView.swift; sourceTree = "<group>"; };
 		0A720ECC2AE57E2A00511167 /* NavTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavTitleView.xib; sourceTree = "<group>"; };
 		0A779DF82AF368D90057E416 /* SimpleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleScrollView.swift; sourceTree = "<group>"; };
@@ -193,6 +196,7 @@
 		0A80AA6F2AF38B7E006FC317 /* RubberBand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubberBand.swift; sourceTree = "<group>"; };
 		0A80AA712AF38BCF006FC317 /* CGRect+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Utils.swift"; sourceTree = "<group>"; };
 		0A9905592B1A01EF00DBF917 /* TransferTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferTextField.swift; sourceTree = "<group>"; };
+		0AA250F42B90B0AA00D525D8 /* AttributedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedLabel.swift; sourceTree = "<group>"; };
 		0AA8B8D72AE6653E000FEBF8 /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 		0AA8B8DE2AE66C61000FEBF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0AA8B8E42AE675B1000FEBF8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -265,6 +269,8 @@
 		0A06F5C42ADD41BA006BCB4F /* CrimsonTaxi */ = {
 			isa = PBXGroup;
 			children = (
+				0A5C27292B91277C00D9EEA5 /* giphy.gif */,
+				0AA250F32B90B08C00D525D8 /* AttributedLabel */,
 				0AC493752B78055C00ADC1E2 /* TransferLogic */,
 				0AAC31882B3D95280054EA61 /* Samples */,
 				0A779DF72AF368BD0057E416 /* CustomScroll */,
@@ -498,6 +504,14 @@
 				0A8042252AE6CB6200EFF450 /* OtpViewDecorator.swift */,
 			);
 			path = OTP;
+			sourceTree = "<group>";
+		};
+		0AA250F32B90B08C00D525D8 /* AttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				0AA250F42B90B0AA00D525D8 /* AttributedLabel.swift */,
+			);
+			path = AttributedLabel;
 			sourceTree = "<group>";
 		};
 		0AA8B8DA2AE66C20000FEBF8 /* Localizations */ = {
@@ -843,6 +857,7 @@
 				0ABF34A32AE2A20400CE6D0F /* Montserrat-Regular.ttf in Resources */,
 				0A06F5CF2ADD41BB006BCB4F /* Assets.xcassets in Resources */,
 				0AAC318C2B3D95530054EA61 /* AppContainerViewController.xib in Resources */,
+				0A5C272A2B91277C00D9EEA5 /* giphy.gif in Resources */,
 				0A80421C2AE6C1ED00EFF450 /* VerificationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -924,6 +939,7 @@
 				0ABF34872AE2771500CE6D0F /* UIColor+Extensions.swift in Sources */,
 				0AC493772B78059700ADC1E2 /* BaseTransferLogic.swift in Sources */,
 				0A79A4532AE2EBF2006059A9 /* BaseUIView.swift in Sources */,
+				0AA250F52B90B0AA00D525D8 /* AttributedLabel.swift in Sources */,
 				0A32C73E2AF296B300FB17D1 /* AppCoordinator.swift in Sources */,
 				0A8042272AE6CB6200EFF450 /* OtpTextField.swift in Sources */,
 				0A1D43F42AE7BDDE00D9D545 /* SearchFieldView.swift in Sources */,
