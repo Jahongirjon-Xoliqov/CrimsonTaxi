@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 final class ResultStatusViewController: UIViewController {
 
     private var result: TransactionResultActionProtocol!
@@ -14,6 +15,7 @@ final class ResultStatusViewController: UIViewController {
     convenience init(with result: TransactionResultActionProtocol) {
         self.init()
         self.result = result
+        
     }
     
     override func viewDidLoad() {
@@ -23,27 +25,47 @@ final class ResultStatusViewController: UIViewController {
     @IBAction func action(_ sender: Any) {
         let action = self.result.subactions!.first!.action
         action?()
-        let parentInstance: ParentClass = ChildClass()
-        parentInstance.someMethod()
+//        let parentInstance: ParentClass = ChildClass()
+//        parentInstance.someMethod()
+        
     }
     
 }
 
+protocol AB {
+    var fun: String { get set }
+    func func2()
+}
+
+protocol AC: AB {
+    
+}
+class II: AC {
+    var fun: String
+    init(fun: String) {
+        self.fun = fun
+    }
+    func func2() {
+        
+    }
+    
+    
+}
 class A {
     func action() {
-        
+        print("class A")
     }
 }
 
 class B: A {
     override func action() {
-        
+        print("class B")
     }
 }
 
 class C: B {
     override func action() {
-        
+        print("class C")
     }
 }
 

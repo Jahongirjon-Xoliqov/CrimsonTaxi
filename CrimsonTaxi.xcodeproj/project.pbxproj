@@ -108,6 +108,7 @@
 		0ABF34AD2AE2CF0C00CE6D0F /* PersonalDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABF34AB2AE2CF0C00CE6D0F /* PersonalDataViewController.xib */; };
 		0ABF34AF2AE2CFEB00CE6D0F /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF34AE2AE2CFEB00CE6D0F /* BaseNavigationController.swift */; };
 		0ABF34B32AE2D1BF00CE6D0F /* NavBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF34B22AE2D1BF00CE6D0F /* NavBackButton.swift */; };
+		0AC493772B78059700ADC1E2 /* BaseTransferLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC493762B78059700ADC1E2 /* BaseTransferLogic.swift */; };
 		0AD3BF5C2AE989B0002AB3B3 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3BF5B2AE989B0002AB3B3 /* IconButton.swift */; };
 		0AD3BF5E2AE989F5002AB3B3 /* IconButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD3BF5D2AE989F5002AB3B3 /* IconButton.xib */; };
 		0AEB72DD2B1E028000456785 /* BSheetFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB72DC2B1E028000456785 /* BSheetFrameCalculator.swift */; };
@@ -223,6 +224,7 @@
 		0ABF34AB2AE2CF0C00CE6D0F /* PersonalDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalDataViewController.xib; sourceTree = "<group>"; };
 		0ABF34AE2AE2CFEB00CE6D0F /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0ABF34B22AE2D1BF00CE6D0F /* NavBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBackButton.swift; sourceTree = "<group>"; };
+		0AC493762B78059700ADC1E2 /* BaseTransferLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTransferLogic.swift; sourceTree = "<group>"; };
 		0AD3BF5B2AE989B0002AB3B3 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		0AD3BF5D2AE989F5002AB3B3 /* IconButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconButton.xib; sourceTree = "<group>"; };
 		0AEB72DC2B1E028000456785 /* BSheetFrameCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSheetFrameCalculator.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 		0A06F5C42ADD41BA006BCB4F /* CrimsonTaxi */ = {
 			isa = PBXGroup;
 			children = (
+				0AC493752B78055C00ADC1E2 /* TransferLogic */,
 				0AAC31882B3D95280054EA61 /* Samples */,
 				0A779DF72AF368BD0057E416 /* CustomScroll */,
 				0A5EDE6F2AF120E7001138DE /* AppCoordinator */,
@@ -697,6 +700,14 @@
 			path = NavigationBackButton;
 			sourceTree = "<group>";
 		};
+		0AC493752B78055C00ADC1E2 /* TransferLogic */ = {
+			isa = PBXGroup;
+			children = (
+				0AC493762B78059700ADC1E2 /* BaseTransferLogic.swift */,
+			);
+			path = TransferLogic;
+			sourceTree = "<group>";
+		};
 		0AD3BF5A2AE98975002AB3B3 /* IconButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -911,6 +922,7 @@
 				0A779E0A2AF37D7B0057E416 /* DecelerationTimingParameters.swift in Sources */,
 				0AABBA9A2B15EF54007DC54E /* CircleDrawerViewController.swift in Sources */,
 				0ABF34872AE2771500CE6D0F /* UIColor+Extensions.swift in Sources */,
+				0AC493772B78059700ADC1E2 /* BaseTransferLogic.swift in Sources */,
 				0A79A4532AE2EBF2006059A9 /* BaseUIView.swift in Sources */,
 				0A32C73E2AF296B300FB17D1 /* AppCoordinator.swift in Sources */,
 				0A8042272AE6CB6200EFF450 /* OtpTextField.swift in Sources */,
